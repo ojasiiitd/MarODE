@@ -1,0 +1,170 @@
+You are an analyst. Your task is to generate a clear, logically structured reasoning trace that explains and justifies a given verdict for a factual claim. You will be provided with a factual claim, a set of evidence texts, and a verdict label (Supported, Refuted, Partially Supported, Misleading, or Unverifiable). Your task is to reconstruct the reasoning that connects the provided evidence to the final verdict, without relying on any external knowledge or assumptions. The number of reasoning steps (R1…Rk) can vary based on complexity.
+
+Output Format (use exactly):
+<Rstart>
+R0: [Interpret or restate the claim in clearer terms]
+R1: [First reasoning step grounded in evidence, building toward the given verdict]
+R2: [Second reasoning step grounded in evidence, continuing the logical path]
+...
+Rk: [Final reasoning step that solidifies the justification for the verdict]
+Final Verdict: [Restate the provided verdict label here]
+<Rend>
+
+Here are some examples for the task:
+
+Example 1
+Input
+Claim: "Says Spectrum will provide free internet to students during coronavirus school closures."
+Label: "SUPPORTED"
+Evidence Text: [
+      "As of March 15, 33 states had decided to close public schools in hopes of curbing the spread of COVID-19. Millions of students could stay out of school for the rest of the academic year, the Washington Post reports. And so amid the fearmongering and misinformation on Facebook, we found a bright spot: posts, such as this one, claiming that Spectrum would provide free internet to students without it.",
+      "\"If students don’t have access to internet they can call 1.844.488.8398 during the school shutdown for free internet from Spectrum,\" the March 13 post says.",
+      "It was flagged as part of Facebook’s efforts to combat false news and misinformation on its News Feed. (Read more about our partnership with Facebook.)",
+      "But this post happens to be true.",
+      "Charter Communications, a company that provides internet service under the brand Spectrum, on March 13 announced it would offer free internet for 60 days for households with students who don’t already have a Spectrum subscription. The number listed is one digit different than the number in the Facebook post — 1-844-488-8395 — but both connected to Spectrum when we tried calling on March 16.",
+      "\"In the coming weeks, many Americans will be affected either directly or indirectly by COVID-19 and Charter is focused on serving and supporting our 29 million customers,\" the company said in a press release.",
+      "Starting March 16, Charter also started waiving installation fees for new student households and opening its wifi hotspots for public use to, it said, \"ease the strain during this challenging time.\"",
+      "Comcast has announced similar measures, pledging free wifi hotspots around the country \"available to anyone who needs them\" and providing free internet for new customers for 60 days. If existing customers contact the company and let it know that they can’t pay their bills right now, the company won’t disconnect their internet service or charge late fees, the company said.",
+      "Both Comcast and Charter Communications seem to be heeding the call of Federal Communications Commission Chairman Aji Pai, who asked broadband and telephone service providers on March 12 to help keep Americans connected during the coronavirus outbreak, according to the FCC.",
+      "We rate this Facebook post True."
+    ]
+
+Output
+<Rstart>  
+R0: The claim states that Spectrum (under Charter Communications) will provide free internet to students during school closures caused by the coronavirus pandemic.  
+R1: The evidence mentions a Facebook post from March 13 claiming that students without internet access can call Spectrum to receive free internet during school shutdowns.  
+R2: Although the Facebook post was reviewed for misinformation, it was confirmed as accurate — specifically noted as “true.”  
+R3: Charter Communications, operating under the Spectrum brand, officially announced on March 13 that it would offer 60 days of free internet to households with students who do not already have a Spectrum subscription.  
+R4: Additional measures taken by Charter included waiving installation fees and opening public wifi hotspots, reinforcing the intent to provide internet access during the pandemic.  
+R5: These actions directly align with the claim that Spectrum would provide free internet to students during coronavirus-related school closures.  
+Final Verdict: SUPPORTED  
+<Rend>
+
+Example 2
+Input
+Claim: "Rhode Island is at the top of the country for alcohol-related fatalities."
+Label: "PARTLY SUPPORTED"
+Evidence Text: [
+      "Law enforcement was one of the natural topics for Operation Clean Government's televised debate among the three Democratic candidates for attorney general.\n\n\tAt one point, one of the three, Stephen Archambault, talked about his four-point plan \"to correct the problems dealing with drunk driving,\" which calls for stiffer penalties for drivers with higher blood-alcohol levels or who are second offenders. The plan also proposes longer license suspensions, including a new type of suspension that would still allow offenders to drive to work.\n\n\tThen Archambault recalled seeing statistics suggesting that 4 out of 10 fatal accidents in Rhode Island involved alcohol. \"We shouldn't be at the top of the country for alcohol-related fatalities,\" he said.\n\n\tBut is Rhode Island really the worst in the country for DWI fatalities? \n\n\tWe asked the Archambault campaign for the source of its numbers. They referred us to a 2009 report from the National Highway Traffic Safety Administration's National Center for Statistics and Analysis.\n\n\tIt turns out that Rhode Island is not number one, but we're up there.\n\n\tFor 2008, the latest year for which statistics are available, the state ranked 5th out of the 50 states when it came to motor vehicle fatalities in which a driver was at the legal limit of .08 or higher.\n\n\tThirty-eight percent of our 69 driving fatalities that year involved someone who was drunk. That's very close to the 4 out of 10 cited by Archambault. Only Hawaii (39 percent), Montana (40 percent), Wyoming (42 percent) and North Dakota (46 percent) had a worse record.\n\n\tApparently our ranking can bounce around. In 2007, Rhode Island was right at the national average of 32 percent, but that doesn't happen often. In 2005 we ranked 11th, and in 2006 we were 10th.\n\n\tBut in 2003 and 2004, we were ranked first in the nation in the percentage of fatalities related to alcohol.\n\n\tArchambault isn't completely correct about our ranking, unless you go back several years. Yet it's clear he did give an accurate assessment of the scope of the problem.\n\n\tWe'll give him a Mostly True."
+    ]
+
+Output
+<Rstart>  
+R0: The claim asserts that Rhode Island is at the top of the country for alcohol-related fatalities.  
+R1: The evidence shows that in 2008, Rhode Island ranked 5th out of 50 states for motor vehicle fatalities involving legally drunk drivers (BAC ≥ 0.08), with 38% of fatalities being alcohol-related.  
+R2: While this percentage is close to the claim that 4 out of 10 fatalities involve alcohol, Rhode Island was not at the top in 2008—four other states had higher percentages.  
+R3: However, historical data shows that Rhode Island did rank 1st in the nation in alcohol-related fatality percentages in both 2003 and 2004.  
+R4: These fluctuations indicate that while Rhode Island has consistently been among the worst states for alcohol-related driving deaths, it is not currently “at the top.”  
+R5: Thus, the claim is only partially accurate—it reflects the seriousness of the issue but overstates Rhode Island’s current ranking.  
+Final Verdict: PARTLY SUPPORTED  
+<Rend>
+
+Example 3
+Input
+Claim: "Florida's legal challenge of the federal health care bill is \"bipartisan.\""
+Label: "PARTLY REFUTED"
+Evidence Text: [
+      "Florida Republican Attorney General Bill McCollum says politics isn't the reason for his legal challenge to the landmark health care bill signed into law by President Barack Obama.To help make the point, McCollum says the 22-page suit filed in a Pensacola federal court on March 23, 2010, is \"bipartisan.\" \"This bipartisan effort by attorneys general around the country should put the federal government on notice that we will not tolerate the constitutional rights of our citizens and the sovereignty of our states to be trampled on,\" McCollum said in a press release announcing the lawsuit. \"This law represents an unprecedented encroachment on the liberty of the American people, and I will pursue this litigation to the highest court if necessary.\"The lawsuit argues that the federal government cannot impose taxes or financial penalties on someone who fails to have health insurance.Given how polarized the health care debate has become, we wondered how \"bipartisan\" the suit truly was. Thirteen attorneys general have signed on. They are:",
+      "Of that list, Caldwell of Louisiana is the lone Democrat. The rest are Republicans. There is no hard and fast definition of bipartisan, but it's quite a stretch to say one out of 13 is bipartisan. As a point of reference, consider two Congressional actions that are almost universally described as bipartisan -- the No Child Left Behind Act of 2001 and the 1996 welfare overhaul.",
+      "Ninety-eight Democrats and 230 Republicans voted for the welfare reform package in the U.S. House. Another 25 Democrats joined 53 Republicans voting for the bill in the U.S. Senate. No Child Left Behind passed 381-41 in the House with 183 Republicans and 198 Democrats voting for it. It passed 87-10 in the Senate with the support of 44 Republicans and 43 Democrats.",
+      "McCollum, who is running for governor, claims that his constitutional challenge of the landmark health care bill passed by Congress is a \"bipartisan effort.\" That's pretty misleading when only one out of 13 attorneys general supporting the lawsuit is something other than a Republican. As such, we rate his claim Barely True."
+    ]
+
+Output
+<Rstart>  
+R0: The claim is that Florida's legal challenge to the federal health care bill is "bipartisan," implying meaningful support from both major political parties.  
+R1: Attorney General Bill McCollum described the lawsuit as a “bipartisan effort” in a press release, likely referencing the political affiliations of the attorneys general who joined the lawsuit.  
+R2: The evidence shows that of the 13 attorneys general who signed the suit, 12 were Republicans and only 1—Caldwell of Louisiana—was a Democrat.  
+R3: The use of the term "bipartisan" is contrasted with other historical legislative examples (e.g., No Child Left Behind, welfare reform), where substantial support came from both parties. These examples highlight that true bipartisanship typically involves broader cross-party representation.  
+R4: Therefore, while the presence of one Democrat technically meets the loosest definition of bipartisanship, the overwhelming Republican composition makes the characterization misleading.  
+R5: The claim is not entirely false, since a Democrat did join, but it exaggerates the extent of bipartisan support, justifying a partially refuted verdict.  
+Final Verdict: PARTLY REFUTED  
+<Rend>
+
+Example 4
+Input
+Claim: "Malia Obama suspended after racist anti-white attack goes viral."
+Label: "REFUTED"
+Evidence Text: [
+      "A story on Facebook would have you believe that Malia Obama got in trouble at Harvard for writing a paper imagining \"a world without white people.\"",
+      "But this is made up.",
+      "\"Malia Obama suspended after racist anti-white attack goes viral,\" states an April 9 headline on Only Politics, a website with headlines supportive of President Donald Trump.",
+      "Facebook users flagged the post as being potentially fabricated, as part of the social network’s efforts to combat online hoaxes.",
+      "The story appeared to be copied from a website by Christopher Blair, a frequent purveyor of fake news. His Facebook page warns: \"Nothing on this page is real. It is a collection of the satirical whimsies of liberal trolls masquerading as conservatives. You have been warned.\"",
+      "The article said that Malia Obama was suspended after writing a paper imagining a \"world without white people.\"",
+      "The story said that Obama wrote: \"White people are so 1960’s. Sometimes the only thing that keeps me going is the fact that they will be blended out by the time I am 30.\"",
+      "Predictions by the U.S. Census show that the white race will increase from 248 million in 2016 to 263 million in 2030.",
+      "The story quoted a person said to be Harvard Dean Cain Markholder: \"This sort of attack against any race is uncalled for. Ms. Obama has been informed she is suspended pending an investigation into her statement.\"",
+      "Harvard has multiple deans, but none is named Cain Markholder.",
+      "Harvard media relations did not respond to our query. We found no news reports that Malia Obama had been suspended from Harvard.",
+      "Malia and Sasha Obama, the daughters of former President Barack Obama, have been the subject of multiple fake news stories, including that Malia was \"among 10 arrested in racist Antifa attack\" and that she was expelled from Harvard, and that Sasha drove an expensive car into a lake.",
+      "It is a hoax that Malia Obama was suspended from Harvard for writing a paper imagining a world without white people. We rate this claim Pants on Fire."
+    ]
+
+Output
+<Rstart>  
+R0: The claim states that Malia Obama was suspended from Harvard after a racist, anti-white paper she wrote went viral.  
+R1: The evidence identifies the origin of this claim as a Facebook post and article on a website known for fabricating news, including a disclaimer that “nothing on this page is real.”  
+R2: The story attributes a quote to a supposed Harvard dean named “Cain Markholder,” but no such person exists among Harvard’s leadership.  
+R3: There are no credible news reports or official statements confirming that Malia Obama was suspended from Harvard, and Harvard’s media relations team did not validate the story.  
+R4: The story contains fabricated quotes and statistics, and is part of a known pattern of hoaxes targeting the Obama family.  
+R5: Given that the entire narrative is invented and no factual basis supports the suspension or the alleged paper, the claim is wholly false.  
+Final Verdict: REFUTED  
+<Rend>
+
+Example 5
+Input
+Claim: "The Chris Hani Baragwanath in South Africa is the worlds third-biggest hospital."
+Label: "PARTLY SUPPORTED"
+Evidence Text: [
+      "The Chris Hani Baragwanath Hospital has been in the black township of Soweto in Johannesburg since World War II when it opened to care for British soldiers. Today, it is a sprawling compound of over 400 buildings housing about 3,200 beds.",
+      "Those numbers clearly mean a lot to management because on the hospital’s website, right under its name, is the statement \"The world’s third-biggest hospital, in South Africa.\"",
+      "That’s not quite right, according to our colleagues at Africa Check.",
+      "Chris Hani Baragwanath Hospital says it trails only West China Hospital, affiliated with Sichuan University in the city of Chengdu, with about 4,300 beds, and Chang Gung Memorial Hospital, which lists about 9,000 beds.",
+      "But Africa Check found an additional hospital that edges out the Soweto health center. The Clinical Centre of Serbia in Belgrade has 3,470 beds available.",
+      "So Chris Hani Baragwanath Hospital ranks at least fourth, not third. It’s actually not even a close fourth because repairs and renovations have trimmed the number of beds open right now. A hospital spokesman told Africa Check that a more accurate current total is 2,888.",
+      "For the curious, New York Presbyterian has 2,328 beds, Florida Hospital Orlando has 2,247 beds and the Hospital das Clinicas with the University of Sao Paulo Medical School has 2,200 beds.",
+      "Our ruling",
+      "Administrators of the Chris Hani Baragwanath Hospital in Soweto, Johannesburg, said theirs is the third-largest in the world. Today, the hospital has 2,888 useable beds. A hospital in Belgrade, Serbia, has 3,470.",
+      "The Chris Hani Baragwanath Hospital is large, but not as large as it believes. We rate this statement Half True."
+    ]
+
+Output
+<Rstart>  
+R0: The claim asserts that the Chris Hani Baragwanath Hospital in South Africa is the world’s third-biggest hospital.  
+R1: The hospital itself promotes this statement on its website, claiming it is third after West China Hospital and Chang Gung Memorial Hospital.  
+R2: However, Africa Check identified the Clinical Centre of Serbia, which has 3,470 beds, as being larger than Chris Hani Baragwanath Hospital.  
+R3: The current number of usable beds at Chris Hani Baragwanath is reported to be around 2,888 due to ongoing renovations, making it at least fourth in size, not third.  
+R4: Therefore, while the hospital is indeed one of the largest in the world, it is not currently the third-largest based on bed count.  
+R5: The claim is partially accurate in conveying the hospital's global scale, but it overstates its ranking.  
+Final Verdict: PARTLY SUPPORTED  
+<Rend>
+
+Example 6
+Input
+Claim: "Photo shows an ice mass hanging inside a Houston home during Texas winter storms."
+Label: "REFUTED"
+Evidence Text: [
+      "Winter Storm Uri recently unleashed record snow, ice and cold on large parts of the country. Widespread power outages, burst pipes and flooding, grocery shortages, boil water advisories and at least 31 deaths were left in its wake.",
+      "Among the states hit hardest was Texas. Beginning Feb. 15, millions of people were left without power and heat amid single-digit temperatures.",
+      "A photo widely circulated on Facebook showed a large mass of ice, apparently from burst pipes, hanging inside of a kitchen. One poster who shared the image on Feb. 17 wrote: \"Someone’s house in Houston Texas.\" That post was shared 12,000 times.",
+      "The post was flagged as part of Facebook’s efforts to combat false news and misinformation on its News Feed. (Read more about our partnership with Facebook.)",
+      "The first comment on the post says the photo is from years ago. But others commenting simply expressed horror at the image.",
+      "The photo does not depict damage from the February storm.",
+      "A TinEye reverse image search shows the photo was shared online as early as 2018. The earliest post we could find is a Reddit thread that started Jan. 8, 2018. It suggests that the image shows a burst water pipe in Watertown, N.Y., which at least one local media outlet covered.",
+      "We rate the post False."
+    ]
+
+Output
+<Rstart>  
+R0: The claim is that a viral photo shows an ice mass hanging inside a Houston home during the Texas winter storms of February 2021.  
+R1: The image was widely circulated on Facebook during Winter Storm Uri, with captions suggesting it depicted storm damage in Houston, Texas.  
+R2: However, a reverse image search reveals that the photo was shared online as early as January 2018, predating the 2021 storm.  
+R3: The earliest known source points to a Reddit post describing a burst pipe in Watertown, New York—not Houston.  
+R4: There is no evidence linking the image to the 2021 Texas storm, and its reuse during that event is misleading.  
+R5: Therefore, the photo does not authentically depict the claimed event and the association with the Houston winter storm is false.  
+Final Verdict: REFUTED  
+<Rend>
+
+Task:
+

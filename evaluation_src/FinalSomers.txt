@@ -1,0 +1,779 @@
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_LIAR_shots2_GPT_OSS_20B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.097649  4.346853e-16
+                roscoe-ss  0.114083  2.728546e-21
+                roscoe-li  0.008159  5.130700e-01
+                roscoe-lc  0.019794  1.120205e-01
+        total_roscoe_mean  0.054374  1.107007e-05
+              judge_score  0.030368  8.344277e-03
+           mean_coherence  0.031430  5.472585e-03
+             mean_RECEval -0.022805  6.582975e-02
+ourmetric_coherence_score  0.290070 2.741923e-150
+  ourmetric_quality_score  0.004375  7.154400e-01
+ ourmetric_evidence_score  0.228713  2.923181e-84
+           ourmetric_b1b2  0.319336 1.100445e-187
+           ourmetric_b2b3  0.231771  7.745943e-87
+           ourmetric_b3b1  0.276238 5.213590e-127
+    ourmetric_total_score  0.283142 1.349212e-134
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_LIAR_shots2_Deepseek_Llama_8B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.086828  1.066935e-12
+                roscoe-ss  0.114449  8.060181e-22
+                roscoe-li  0.050142  4.479506e-05
+                roscoe-lc -0.018076  1.451549e-01
+        total_roscoe_mean  0.085469  2.920458e-12
+              judge_score  0.042104  2.017155e-04
+           mean_coherence  0.055059  1.205520e-06
+             mean_RECEval  0.026245  3.417822e-02
+ourmetric_coherence_score  0.263416 3.460668e-119
+  ourmetric_quality_score  0.038736  1.269226e-03
+ ourmetric_evidence_score  0.215020  7.973003e-75
+           ourmetric_b1b2  0.313981 3.596466e-178
+           ourmetric_b2b3  0.220533  9.239775e-79
+           ourmetric_b3b1  0.266553 1.619685e-118
+    ourmetric_total_score  0.274990 3.377144e-127
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_POLITIFACT_shots4_Deepseek_Qwen_7B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.112242  1.340797e-22
+                roscoe-ss  0.132620  8.618291e-31
+                roscoe-li  0.006194  5.967835e-01
+                roscoe-lc -0.015133  2.013873e-01
+        total_roscoe_mean  0.054623  2.285050e-06
+              judge_score  0.034249  2.254890e-03
+           mean_coherence  0.035053  8.510199e-04
+             mean_RECEval  0.010754  3.547842e-01
+ourmetric_coherence_score  0.197268  1.965898e-65
+  ourmetric_quality_score  0.050958  1.170255e-05
+ ourmetric_evidence_score  0.223533  3.878229e-87
+           ourmetric_b1b2  0.223283  1.209592e-84
+           ourmetric_b2b3  0.228115  1.350729e-90
+           ourmetric_b3b1  0.260079 4.863198e-120
+    ourmetric_total_score  0.267475 3.959361e-127
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_LIAR_shots1_Deepseek_Qwen_7B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.101028  2.140751e-16
+                roscoe-ss  0.145291  4.115579e-34
+                roscoe-li  0.011632  3.402319e-01
+                roscoe-lc -0.043800  4.546973e-04
+        total_roscoe_mean  0.056216  4.020951e-06
+              judge_score  0.036638  1.339032e-03
+           mean_coherence  0.037684  6.260659e-04
+             mean_RECEval  0.003713  7.625573e-01
+ourmetric_coherence_score  0.206795  1.989779e-68
+  ourmetric_quality_score  0.040656  6.900921e-04
+ ourmetric_evidence_score  0.195081  1.136900e-62
+           ourmetric_b1b2  0.240573  5.856796e-95
+           ourmetric_b2b3  0.197930  6.207602e-64
+           ourmetric_b3b1  0.244315 3.552553e-103
+    ourmetric_total_score  0.250171 1.019857e-107
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_LIAR_shots2_Deepseek_Qwen_7B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.098892  2.234469e-16
+                roscoe-ss  0.108407  2.868219e-19
+                roscoe-li  0.021319  7.631627e-02
+                roscoe-lc -0.017858  1.494219e-01
+        total_roscoe_mean  0.065857  3.599384e-08
+              judge_score  0.022423  4.540422e-02
+           mean_coherence  0.045225  3.748672e-05
+             mean_RECEval  0.003128  7.991387e-01
+ourmetric_coherence_score  0.203803  2.259546e-66
+  ourmetric_quality_score  0.047633  5.986587e-05
+ ourmetric_evidence_score  0.213103  3.940007e-70
+           ourmetric_b1b2  0.239646  1.110630e-93
+           ourmetric_b2b3  0.218122  2.422169e-73
+           ourmetric_b3b1  0.252880 6.006925e-102
+    ourmetric_total_score  0.260381 2.691261e-108
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_LIAR_shots4_Deepseek_Qwen_14B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.105335  6.468406e-18
+                roscoe-ss  0.134221  1.031154e-29
+                roscoe-li  0.047893  1.001939e-04
+                roscoe-lc -0.032726  8.865213e-03
+        total_roscoe_mean  0.093748  1.074164e-14
+              judge_score  0.022146  5.575764e-02
+           mean_coherence  0.050697  6.866398e-06
+             mean_RECEval  0.039401  1.115267e-03
+ourmetric_coherence_score  0.298877 3.973154e-165
+  ourmetric_quality_score  0.034605  3.603916e-03
+ ourmetric_evidence_score  0.205469  2.978714e-66
+           ourmetric_b1b2  0.338864 4.180947e-227
+           ourmetric_b2b3  0.212143  1.541534e-70
+           ourmetric_b3b1  0.255532 3.087959e-108
+    ourmetric_total_score  0.264143 9.798076e-116
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_LIAR_shots4_Qwen_CoT_3B.json 
+
+                   Metric   SomersD       pValue
+                roscoe-sa  0.088836 1.936826e-13
+                roscoe-ss  0.128454 3.310080e-26
+                roscoe-li  0.016170 1.919084e-01
+                roscoe-lc -0.004278 7.292620e-01
+        total_roscoe_mean  0.065217 1.230396e-07
+              judge_score  0.014344 2.098768e-01
+           mean_coherence  0.009480 3.859598e-01
+             mean_RECEval  0.003703 7.612725e-01
+ourmetric_coherence_score  0.182802 5.175923e-54
+  ourmetric_quality_score  0.057719 9.456777e-07
+ ourmetric_evidence_score  0.184975 6.869763e-53
+           ourmetric_b1b2  0.214648 1.688397e-74
+           ourmetric_b2b3  0.188330 1.130548e-54
+           ourmetric_b3b1  0.223019 8.421619e-79
+    ourmetric_total_score  0.228588 9.734103e-83
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_POLITIFACT_shots1_Deepseek_Qwen_7B.json 
+
+                   Metric  SomersD        pValue
+                roscoe-sa 0.103151  6.424219e-19
+                roscoe-ss 0.117619  8.709091e-25
+                roscoe-li 0.023277  4.844617e-02
+                roscoe-lc 0.003214  7.850034e-01
+        total_roscoe_mean 0.072008  6.572006e-10
+              judge_score 0.053972  1.287757e-06
+           mean_coherence 0.020520  5.000039e-02
+             mean_RECEval 0.022855  5.162960e-02
+ourmetric_coherence_score 0.172753  2.397706e-52
+  ourmetric_quality_score 0.070393  1.216718e-09
+ ourmetric_evidence_score 0.215229  1.869236e-82
+           ourmetric_b1b2 0.205317  4.217630e-75
+           ourmetric_b2b3 0.218758  7.112443e-85
+           ourmetric_b3b1 0.256675 2.704537e-122
+    ourmetric_total_score 0.264223 7.400568e-130
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_POLITIFACT_shots2_Deepseek_Llama_8B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.117337  1.505932e-23
+                roscoe-ss  0.141011  1.319453e-34
+                roscoe-li  0.034009  3.442688e-03
+                roscoe-lc -0.030585  9.778226e-03
+        total_roscoe_mean  0.081633  1.509726e-12
+              judge_score  0.037476  8.172613e-04
+           mean_coherence  0.029487  6.902761e-03
+             mean_RECEval  0.044623  1.649953e-04
+ourmetric_coherence_score  0.268710 5.957571e-138
+  ourmetric_quality_score  0.031067  6.859452e-03
+ ourmetric_evidence_score  0.244470 2.034684e-111
+           ourmetric_b1b2  0.318558 8.482753e-203
+           ourmetric_b2b3  0.249293 3.707411e-115
+           ourmetric_b3b1  0.294838 6.511982e-172
+    ourmetric_total_score  0.303018 2.752026e-182
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_POLITIFACT_shots1.json 
+
+                   Metric  SomersD        pValue
+                roscoe-sa 0.114520 5.883267e-107
+                roscoe-ss 0.126381 4.795653e-133
+                roscoe-li 0.028292  9.427059e-08
+                roscoe-lc 0.000203  9.695078e-01
+        total_roscoe_mean 0.079284  3.604465e-51
+              judge_score 0.051560  2.883264e-25
+           mean_coherence 0.029593  5.114223e-10
+             mean_RECEval 0.025321  1.502682e-06
+ourmetric_coherence_score 0.216454  0.000000e+00
+  ourmetric_quality_score 0.037362  5.743697e-13
+ ourmetric_evidence_score 0.239761  0.000000e+00
+           ourmetric_b1b2 0.258345  0.000000e+00
+           ourmetric_b2b3 0.244382  0.000000e+00
+           ourmetric_b3b1 0.279854  0.000000e+00
+    ourmetric_total_score 0.289543  0.000000e+00
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_LIAR_shots4_Deepseek_Llama_8B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.115783  4.120706e-21
+                roscoe-ss  0.161402  1.727209e-42
+                roscoe-li  0.058446  1.731012e-06
+                roscoe-lc -0.035424  3.767209e-03
+        total_roscoe_mean  0.112106  2.830382e-20
+              judge_score  0.013934  2.173485e-01
+           mean_coherence  0.068058  3.223943e-09
+             mean_RECEval  0.038950  1.387287e-03
+ourmetric_coherence_score  0.298591 3.746760e-160
+  ourmetric_quality_score  0.037873  1.275873e-03
+ ourmetric_evidence_score  0.207086  4.389448e-70
+           ourmetric_b1b2  0.343052 1.482971e-222
+           ourmetric_b2b3  0.213917  3.394864e-74
+           ourmetric_b3b1  0.263302 4.241148e-119
+    ourmetric_total_score  0.272056 1.479564e-126
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_Qwen_CoT_3B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.105272 5.864630e-104
+                roscoe-ss  0.124202 3.967069e-148
+                roscoe-li  0.016314  9.396649e-04
+                roscoe-lc -0.000869  8.605917e-01
+        total_roscoe_mean  0.068570  1.869099e-44
+              judge_score  0.027125  3.629472e-09
+           mean_coherence  0.019150  1.234670e-05
+             mean_RECEval  0.004903  3.194394e-01
+ourmetric_coherence_score  0.174679 1.090621e-293
+  ourmetric_quality_score  0.063869  1.142213e-40
+ ourmetric_evidence_score  0.195501  0.000000e+00
+           ourmetric_b1b2  0.209330  0.000000e+00
+           ourmetric_b2b3  0.199192  0.000000e+00
+           ourmetric_b3b1  0.230277  0.000000e+00
+    ourmetric_total_score  0.237083  0.000000e+00
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_POLITIFACT_shots4.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.128092 1.843446e-133
+                roscoe-ss  0.133139 4.554042e-150
+                roscoe-li  0.019981  1.495582e-04
+                roscoe-lc -0.006615  2.112443e-01
+        total_roscoe_mean  0.074189  1.440065e-45
+              judge_score  0.040741  4.375233e-16
+           mean_coherence  0.033025  4.626943e-12
+             mean_RECEval  0.017715  7.165661e-04
+ourmetric_coherence_score  0.229581  0.000000e+00
+  ourmetric_quality_score  0.041028  1.797081e-15
+ ourmetric_evidence_score  0.227882  0.000000e+00
+           ourmetric_b1b2  0.263850  0.000000e+00
+           ourmetric_b2b3  0.232154  0.000000e+00
+           ourmetric_b3b1  0.271410  0.000000e+00
+    ourmetric_total_score  0.279165  0.000000e+00
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_LIAR_shots1_Deepseek_Qwen_14B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.121432  7.541409e-24
+                roscoe-ss  0.117426  1.061928e-22
+                roscoe-li  0.013119  2.789875e-01
+                roscoe-lc -0.012505  3.180692e-01
+        total_roscoe_mean  0.060925  4.341456e-07
+              judge_score  0.034604  2.227505e-03
+           mean_coherence  0.041868  2.121544e-04
+             mean_RECEval  0.028155  1.969988e-02
+ourmetric_coherence_score  0.275643 7.435224e-135
+  ourmetric_quality_score -0.003340  7.800337e-01
+ ourmetric_evidence_score  0.215946  5.808846e-75
+           ourmetric_b1b2  0.311498 3.590658e-183
+           ourmetric_b2b3  0.218330  3.387038e-76
+           ourmetric_b3b1  0.265509 2.412110e-117
+    ourmetric_total_score  0.271204 3.088298e-122
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_LIAR_shots1_Qwen_CoT_3B.json 
+
+                   Metric   SomersD       pValue
+                roscoe-sa  0.083601 9.197470e-12
+                roscoe-ss  0.119594 2.352263e-23
+                roscoe-li -0.000906 9.422972e-01
+                roscoe-lc  0.011731 3.434264e-01
+        total_roscoe_mean  0.041273 9.648276e-04
+              judge_score  0.020860 6.414345e-02
+           mean_coherence  0.012730 2.520956e-01
+             mean_RECEval  0.002318 8.503322e-01
+ourmetric_coherence_score  0.197337 1.641623e-62
+  ourmetric_quality_score  0.043141 2.967724e-04
+ ourmetric_evidence_score  0.199683 2.175957e-61
+           ourmetric_b1b2  0.231300 1.315455e-86
+           ourmetric_b2b3  0.202786 9.810690e-63
+           ourmetric_b3b1  0.232058 2.319604e-85
+    ourmetric_total_score  0.237981 5.365721e-89
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_LIAR_shots2_Qwen_CoT_3B.json 
+
+                   Metric   SomersD       pValue
+                roscoe-sa  0.102934 4.357478e-17
+                roscoe-ss  0.122846 3.480633e-24
+                roscoe-li  0.013235 2.741595e-01
+                roscoe-lc -0.009728 4.307486e-01
+        total_roscoe_mean  0.064215 8.466830e-08
+              judge_score  0.004820 6.739414e-01
+           mean_coherence  0.005405 6.260947e-01
+             mean_RECEval -0.005688 6.451663e-01
+ourmetric_coherence_score  0.184152 1.384523e-53
+  ourmetric_quality_score  0.052450 1.513258e-05
+ ourmetric_evidence_score  0.179377 8.472450e-50
+           ourmetric_b1b2  0.214512 4.161404e-73
+           ourmetric_b2b3  0.181930 6.799091e-51
+           ourmetric_b3b1  0.217095 6.330056e-76
+    ourmetric_total_score  0.222563 2.331765e-79
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_POLITIFACT_shots2_Qwen_CoT_3B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.117214  1.112342e-24
+                roscoe-ss  0.125165  5.463948e-28
+                roscoe-li  0.032653  5.740059e-03
+                roscoe-lc -0.004928  6.802535e-01
+        total_roscoe_mean  0.090673  8.975948e-15
+              judge_score  0.041563  1.682500e-04
+           mean_coherence  0.036329  5.304835e-04
+             mean_RECEval  0.021833  6.721300e-02
+ourmetric_coherence_score  0.161498  5.287425e-45
+  ourmetric_quality_score  0.082220  8.384288e-13
+ ourmetric_evidence_score  0.203093  4.759157e-73
+           ourmetric_b1b2  0.199956  9.733770e-70
+           ourmetric_b2b3  0.208399  1.004088e-76
+           ourmetric_b3b1  0.235313  1.201580e-98
+    ourmetric_total_score  0.243923 1.718093e-106
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_LIAR_shots4_Deepseek_Qwen_7B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.115250  1.331885e-21
+                roscoe-ss  0.141901  1.521811e-32
+                roscoe-li -0.001214  9.202027e-01
+                roscoe-lc -0.017059  1.662733e-01
+        total_roscoe_mean  0.050272  3.540084e-05
+              judge_score  0.019458  8.559822e-02
+           mean_coherence  0.021271  5.431192e-02
+             mean_RECEval  0.020343  9.700248e-02
+ourmetric_coherence_score  0.232191  7.295913e-88
+  ourmetric_quality_score  0.034316  4.967787e-03
+ ourmetric_evidence_score  0.230930  6.335420e-87
+           ourmetric_b1b2  0.255367 1.398516e-108
+           ourmetric_b2b3  0.234298  1.613017e-89
+           ourmetric_b3b1  0.276532 1.607028e-129
+    ourmetric_total_score  0.282882 1.948572e-136
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_Deepseek_Llama_8B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.111105 2.804836e-115
+                roscoe-ss  0.130097 1.000584e-162
+                roscoe-li  0.049625  3.178600e-24
+                roscoe-lc -0.022290  6.485824e-06
+        total_roscoe_mean  0.095838  2.580598e-86
+              judge_score  0.042056  4.791317e-20
+           mean_coherence  0.051574  1.084954e-29
+             mean_RECEval  0.031112  2.083345e-10
+ourmetric_coherence_score  0.279828  0.000000e+00
+  ourmetric_quality_score  0.033136  4.781344e-12
+ ourmetric_evidence_score  0.225295  0.000000e+00
+           ourmetric_b1b2  0.327880  0.000000e+00
+           ourmetric_b2b3  0.230934  0.000000e+00
+           ourmetric_b3b1  0.279145  0.000000e+00
+    ourmetric_total_score  0.288150  0.000000e+00
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_POLITIFACT_shots1_Deepseek_Qwen_14B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.120691  2.044758e-24
+                roscoe-ss  0.131342  7.839846e-30
+                roscoe-li  0.031308  8.417775e-03
+                roscoe-lc -0.008010  5.036552e-01
+        total_roscoe_mean  0.084553  7.828864e-13
+              judge_score  0.050623  5.834482e-06
+           mean_coherence  0.035169  1.032494e-03
+             mean_RECEval  0.038733  9.132781e-04
+ourmetric_coherence_score  0.261985 8.912075e-126
+  ourmetric_quality_score  0.028947  1.154478e-02
+ ourmetric_evidence_score  0.256541 4.725491e-121
+           ourmetric_b1b2  0.308331 2.948643e-182
+           ourmetric_b2b3  0.261338 4.184769e-125
+           ourmetric_b3b1  0.301951 1.041214e-176
+    ourmetric_total_score  0.310923 1.762520e-188
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_LIAR_shots4.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.107538  8.097579e-87
+                roscoe-ss  0.138607 4.597901e-149
+                roscoe-li  0.028559  1.865352e-07
+                roscoe-lc -0.018370  8.869670e-04
+        total_roscoe_mean  0.077613  4.112459e-46
+              judge_score  0.013983  6.017221e-03
+           mean_coherence  0.034687  5.228955e-12
+             mean_RECEval  0.021102  1.052377e-04
+ourmetric_coherence_score  0.242726  0.000000e+00
+  ourmetric_quality_score  0.035761  2.101153e-11
+ ourmetric_evidence_score  0.208158  0.000000e+00
+           ourmetric_b1b2  0.276939  0.000000e+00
+           ourmetric_b2b3  0.212902  0.000000e+00
+           ourmetric_b3b1  0.252734  0.000000e+00
+    ourmetric_total_score  0.260367  0.000000e+00
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_POLITIFACT_shots2_Deepseek_Qwen_14B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.132962  6.489039e-30
+                roscoe-ss  0.157147  1.355980e-43
+                roscoe-li  0.024800  3.654763e-02
+                roscoe-lc -0.019450  1.000662e-01
+        total_roscoe_mean  0.082826  2.382344e-12
+              judge_score  0.053912  1.063231e-06
+           mean_coherence  0.049051  4.525171e-06
+             mean_RECEval  0.068067  6.953332e-09
+ourmetric_coherence_score  0.290210 4.781468e-167
+  ourmetric_quality_score  0.053739  3.045862e-06
+ ourmetric_evidence_score  0.273134 5.307071e-133
+           ourmetric_b1b2  0.334968 2.336609e-229
+           ourmetric_b2b3  0.279639 7.197002e-140
+           ourmetric_b3b1  0.324989 5.971043e-203
+    ourmetric_total_score  0.335167 8.600801e-217
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_LIAR_shots1.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.100347  5.983396e-76
+                roscoe-ss  0.116697 3.119132e-104
+                roscoe-li  0.025268  3.966143e-06
+                roscoe-lc -0.007329  1.883557e-01
+        total_roscoe_mean  0.069121  6.908817e-37
+              judge_score  0.036664  5.199402e-13
+           mean_coherence  0.041673  1.310242e-16
+             mean_RECEval  0.008166  1.351240e-01
+ourmetric_coherence_score  0.239543  0.000000e+00
+  ourmetric_quality_score  0.018123  7.211266e-04
+ ourmetric_evidence_score  0.207527  0.000000e+00
+           ourmetric_b1b2  0.276237  0.000000e+00
+           ourmetric_b2b3  0.210282  0.000000e+00
+           ourmetric_b3b1  0.255036  0.000000e+00
+    ourmetric_total_score  0.261804  0.000000e+00
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_LIAR_shots1_GPT_OSS_20B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.098368  2.845087e-16
+                roscoe-ss  0.090237  1.478844e-13
+                roscoe-li  0.041030  7.579565e-04
+                roscoe-lc  0.026625  3.150445e-02
+        total_roscoe_mean  0.085408  1.031744e-12
+              judge_score  0.040859  3.465716e-04
+           mean_coherence  0.057457  3.805416e-07
+             mean_RECEval -0.000916  9.409170e-01
+ourmetric_coherence_score  0.292318 2.192285e-152
+  ourmetric_quality_score -0.010027  4.069847e-01
+ ourmetric_evidence_score  0.221770  8.115148e-80
+           ourmetric_b1b2  0.318329 1.935886e-183
+           ourmetric_b2b3  0.224667  1.531662e-81
+           ourmetric_b3b1  0.275669 2.488858e-129
+    ourmetric_total_score  0.282168 4.383251e-135
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_POLITIFACT_shots2_Deepseek_Qwen_7B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.105208  1.086539e-18
+                roscoe-ss  0.127331  2.844901e-28
+                roscoe-li  0.029536  1.338096e-02
+                roscoe-lc -0.015282  2.001661e-01
+        total_roscoe_mean  0.077485  5.871057e-11
+              judge_score  0.031427  4.416200e-03
+           mean_coherence  0.031241  2.483237e-03
+             mean_RECEval -0.017627  1.330852e-01
+ourmetric_coherence_score  0.210489  2.275674e-78
+  ourmetric_quality_score  0.034217  3.367378e-03
+ ourmetric_evidence_score  0.207039  7.155404e-73
+           ourmetric_b1b2  0.233148  8.879147e-98
+           ourmetric_b2b3  0.208164  1.655263e-73
+           ourmetric_b3b1  0.253212 3.533831e-114
+    ourmetric_total_score  0.256727 4.284519e-117
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_LIAR_shots2_Deepseek_Qwen_14B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.109314  4.837951e-19
+                roscoe-ss  0.113884  5.298212e-21
+                roscoe-li  0.045896  2.248001e-04
+                roscoe-lc -0.015987  1.833256e-01
+        total_roscoe_mean  0.094179  2.306446e-14
+              judge_score  0.040637  4.146754e-04
+           mean_coherence  0.062409  3.932233e-08
+             mean_RECEval  0.040688  6.468307e-04
+ourmetric_coherence_score  0.294410 8.160608e-155
+  ourmetric_quality_score  0.035136  3.183154e-03
+ ourmetric_evidence_score  0.222019  2.630777e-82
+           ourmetric_b1b2  0.339891 1.118726e-226
+           ourmetric_b2b3  0.227424  3.798548e-86
+           ourmetric_b3b1  0.272127 6.317372e-129
+    ourmetric_total_score  0.280241 1.896920e-137
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_Deepseek_Qwen_14B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.118964 4.458136e-131
+                roscoe-ss  0.129365 5.167629e-162
+                roscoe-li  0.031753  1.069326e-10
+                roscoe-lc -0.018942  1.258313e-04
+        total_roscoe_mean  0.081866  3.780320e-63
+              judge_score  0.043626  3.579345e-21
+           mean_coherence  0.045784  2.344804e-24
+             mean_RECEval  0.045735  3.455982e-21
+ourmetric_coherence_score  0.285674  0.000000e+00
+  ourmetric_quality_score  0.028646  2.019792e-09
+ ourmetric_evidence_score  0.235293  0.000000e+00
+           ourmetric_b1b2  0.327225  0.000000e+00
+           ourmetric_b2b3  0.240316  0.000000e+00
+           ourmetric_b3b1  0.285651  0.000000e+00
+    ourmetric_total_score  0.293681  0.000000e+00
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_POLITIFACT_shots1_GPT_OSS_20B.json 
+
+                   Metric  SomersD        pValue
+                roscoe-sa 0.118669  7.424015e-25
+                roscoe-ss 0.133128  1.408963e-31
+                roscoe-li 0.010481  3.785266e-01
+                roscoe-lc 0.012895  2.762646e-01
+        total_roscoe_mean 0.065568  3.269309e-08
+              judge_score 0.055054  7.096948e-07
+           mean_coherence 0.014931  1.605680e-01
+             mean_RECEval 0.012390  2.908650e-01
+ourmetric_coherence_score 0.269570 3.800392e-132
+  ourmetric_quality_score 0.000240  9.834840e-01
+ ourmetric_evidence_score 0.264354 2.525182e-127
+           ourmetric_b1b2 0.303508 9.477976e-176
+           ourmetric_b2b3 0.267766 3.865834e-130
+           ourmetric_b3b1 0.310297 4.553321e-183
+    ourmetric_total_score 0.318217 2.569850e-194
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_POLITIFACT_shots1_Deepseek_Llama_8B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.121373  7.921311e-25
+                roscoe-ss  0.126352  5.792398e-27
+                roscoe-li  0.052688  7.990594e-06
+                roscoe-lc -0.021502  6.921290e-02
+        total_roscoe_mean  0.098411  6.068677e-17
+              judge_score  0.057937  1.540654e-07
+           mean_coherence  0.046527  1.828967e-05
+             mean_RECEval  0.037608  1.517215e-03
+ourmetric_coherence_score  0.268151 2.592571e-140
+  ourmetric_quality_score  0.032717  5.130777e-03
+ ourmetric_evidence_score  0.252168 2.634480e-118
+           ourmetric_b1b2  0.320220 3.126767e-217
+           ourmetric_b2b3  0.259537 1.473743e-125
+           ourmetric_b3b1  0.300403 5.647538e-178
+    ourmetric_total_score  0.312209 7.896316e-194
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_LIAR_shots4_GPT_OSS_20B.json 
+
+                   Metric  SomersD        pValue
+                roscoe-sa 0.116294  2.239039e-21
+                roscoe-ss 0.127784  4.580726e-27
+                roscoe-li 0.022265  6.875249e-02
+                roscoe-lc 0.003691  7.663406e-01
+        total_roscoe_mean 0.070221  6.570823e-09
+              judge_score 0.001119  9.211337e-01
+           mean_coherence 0.023629  3.568713e-02
+             mean_RECEval 0.001458  9.045093e-01
+ourmetric_coherence_score 0.273667 2.568695e-134
+  ourmetric_quality_score 0.023620  4.826437e-02
+ ourmetric_evidence_score 0.211850  1.245499e-71
+           ourmetric_b1b2 0.302444 1.312400e-165
+           ourmetric_b2b3 0.215173  2.083943e-73
+           ourmetric_b3b1 0.256589 2.344678e-108
+    ourmetric_total_score 0.262963 1.690396e-113
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_POLITIFACT_shots4_GPT_OSS_20B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.137969  6.950092e-32
+                roscoe-ss  0.159197  1.779620e-43
+                roscoe-li  0.015051  2.049216e-01
+                roscoe-lc  0.022385  5.582157e-02
+        total_roscoe_mean  0.079972  1.116835e-11
+              judge_score  0.031299  5.480941e-03
+           mean_coherence  0.023421  2.974056e-02
+             mean_RECEval -0.005334  6.482861e-01
+ourmetric_coherence_score  0.296899 4.186055e-172
+  ourmetric_quality_score  0.025022  2.970576e-02
+ ourmetric_evidence_score  0.249063 2.367008e-108
+           ourmetric_b1b2  0.328114 3.167423e-220
+           ourmetric_b2b3  0.251614 7.372032e-110
+           ourmetric_b3b1  0.303082 7.128280e-171
+    ourmetric_total_score  0.308874 8.599105e-177
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_POLITIFACT_shots4_Deepseek_Llama_8B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.129859  1.611180e-29
+                roscoe-ss  0.128423  1.289326e-29
+                roscoe-li  0.048180  4.053352e-05
+                roscoe-lc -0.009561  4.249184e-01
+        total_roscoe_mean  0.099615  1.730205e-17
+              judge_score  0.048588  1.325708e-05
+           mean_coherence  0.055351  3.820153e-07
+             mean_RECEval  0.033910  3.634275e-03
+ourmetric_coherence_score  0.289731 7.850308e-164
+  ourmetric_quality_score  0.035858  1.867390e-03
+ ourmetric_evidence_score  0.227308  1.123559e-88
+           ourmetric_b1b2  0.332763 3.642265e-225
+           ourmetric_b2b3  0.233798  5.649321e-94
+           ourmetric_b3b1  0.282506 1.763304e-144
+    ourmetric_total_score  0.291815 7.796660e-155
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_LIAR_shots2.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.098324  3.062273e-73
+                roscoe-ss  0.114635 1.815031e-100
+                roscoe-li  0.027931  3.585859e-07
+                roscoe-lc -0.007648  1.649782e-01
+        total_roscoe_mean  0.072770  1.138272e-40
+              judge_score  0.028191  3.335372e-08
+           mean_coherence  0.039680  3.045170e-15
+             mean_RECEval  0.008381  1.267839e-01
+ourmetric_coherence_score  0.235685  0.000000e+00
+  ourmetric_quality_score  0.034214  1.757680e-10
+ ourmetric_evidence_score  0.212180  0.000000e+00
+           ourmetric_b1b2  0.274257  0.000000e+00
+           ourmetric_b2b3  0.216378  0.000000e+00
+           ourmetric_b3b1  0.255998  0.000000e+00
+    ourmetric_total_score  0.263647  0.000000e+00
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_POLITIFACT_shots4_Qwen_CoT_3B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.132898  1.492058e-29
+                roscoe-ss  0.126201  1.194512e-28
+                roscoe-li  0.011351  3.384053e-01
+                roscoe-lc -0.012236  3.002733e-01
+        total_roscoe_mean  0.068916  5.095974e-09
+              judge_score  0.036102  1.286116e-03
+           mean_coherence  0.017786  8.519406e-02
+             mean_RECEval -0.008386  4.804786e-01
+ourmetric_coherence_score  0.151426  4.155760e-39
+  ourmetric_quality_score  0.082593  5.507681e-13
+ ourmetric_evidence_score  0.195504  2.320751e-67
+           ourmetric_b1b2  0.180853  1.531241e-55
+           ourmetric_b2b3  0.198730  1.506074e-69
+           ourmetric_b3b1  0.231311  4.171577e-95
+    ourmetric_total_score  0.237387 5.368180e-100
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_POLITIFACT_shots1_Qwen_CoT_3B.json 
+
+                   Metric  SomersD        pValue
+                roscoe-sa 0.111889  4.214514e-22
+                roscoe-ss 0.123733  5.331252e-27
+                roscoe-li 0.025046  3.441296e-02
+                roscoe-lc 0.015779  1.854783e-01
+        total_roscoe_mean 0.080855  5.903365e-12
+              judge_score 0.040443  2.415643e-04
+           mean_coherence 0.031809  2.343756e-03
+             mean_RECEval 0.014786  2.103940e-01
+ourmetric_coherence_score 0.179933  9.387728e-56
+  ourmetric_quality_score 0.063814  3.608803e-08
+ ourmetric_evidence_score 0.209167  2.639722e-76
+           ourmetric_b1b2 0.222512  6.269114e-87
+           ourmetric_b2b3 0.213584  9.067511e-80
+           ourmetric_b3b1 0.244113 4.228539e-105
+    ourmetric_total_score 0.252624 3.975491e-113
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_LIAR_shots1_Deepseek_Llama_8B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.098983  3.877316e-16
+                roscoe-ss  0.110216  6.989207e-20
+                roscoe-li  0.060095  8.834854e-07
+                roscoe-lc -0.018987  1.259226e-01
+        total_roscoe_mean  0.103330  2.031290e-17
+              judge_score  0.049752  1.070473e-05
+           mean_coherence  0.059136  2.499416e-07
+             mean_RECEval  0.004087  7.358627e-01
+ourmetric_coherence_score  0.293813 8.418410e-155
+  ourmetric_quality_score  0.022980  5.487654e-02
+ ourmetric_evidence_score  0.205376  3.948170e-66
+           ourmetric_b1b2  0.341745 3.959404e-217
+           ourmetric_b2b3  0.208482  4.367316e-68
+           ourmetric_b3b1  0.266840 1.485959e-117
+    ourmetric_total_score  0.274298 5.404315e-124
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_GPT_OSS_20B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.111653 5.894172e-117
+                roscoe-ss  0.125607 1.445432e-150
+                roscoe-li  0.017203  4.988819e-04
+                roscoe-lc  0.022776  3.911982e-06
+        total_roscoe_mean  0.068879  7.709140e-45
+              judge_score  0.037456  5.484319e-16
+           mean_coherence  0.032052  7.882730e-13
+             mean_RECEval -0.001761  7.199531e-01
+ourmetric_coherence_score  0.282641  0.000000e+00
+  ourmetric_quality_score  0.008191  8.828579e-02
+ ourmetric_evidence_score  0.236667  0.000000e+00
+           ourmetric_b1b2  0.311789  0.000000e+00
+           ourmetric_b2b3  0.239225  0.000000e+00
+           ourmetric_b3b1  0.285693  0.000000e+00
+    ourmetric_total_score  0.292058  0.000000e+00
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_POLITIFACT_shots4_Deepseek_Qwen_14B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.136233  3.977766e-31
+                roscoe-ss  0.123000  1.102683e-27
+                roscoe-li  0.023741  4.325340e-02
+                roscoe-lc -0.024751  3.562295e-02
+        total_roscoe_mean  0.073697  2.945917e-10
+              judge_score  0.053960  1.346055e-06
+           mean_coherence  0.035737  8.535777e-04
+             mean_RECEval  0.055521  1.893550e-06
+ourmetric_coherence_score  0.297108 1.254646e-173
+  ourmetric_quality_score  0.021411  6.227116e-02
+ ourmetric_evidence_score  0.244519 4.057894e-111
+           ourmetric_b1b2  0.331851 4.024141e-220
+           ourmetric_b2b3  0.248863 3.662968e-114
+           ourmetric_b3b1  0.298408 2.393823e-177
+    ourmetric_total_score  0.304911 1.917791e-184
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_POLITIFACT_shots2_GPT_OSS_20B.json 
+
+                   Metric  SomersD        pValue
+                roscoe-sa 0.105932  2.609524e-19
+                roscoe-ss 0.125673  4.135773e-27
+                roscoe-li 0.008062  5.009604e-01
+                roscoe-lc 0.050242  1.877923e-05
+        total_roscoe_mean 0.062560  1.553207e-07
+              judge_score 0.062956  2.344351e-08
+           mean_coherence 0.043829  2.480336e-05
+             mean_RECEval 0.002742  8.176210e-01
+ourmetric_coherence_score 0.275787 1.420650e-140
+  ourmetric_quality_score 0.006248  5.883207e-01
+ ourmetric_evidence_score 0.243959 1.242648e-105
+           ourmetric_b1b2 0.300968 1.249573e-167
+           ourmetric_b2b3 0.244017 7.475233e-105
+           ourmetric_b3b1 0.291350 7.584826e-157
+    ourmetric_total_score 0.295452 1.033896e-161
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_POLITIFACT_shots2.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.115194 4.218357e-107
+                roscoe-ss  0.135022 2.526943e-152
+                roscoe-li  0.025594  1.375062e-06
+                roscoe-lc -0.004739  3.722079e-01
+        total_roscoe_mean  0.078461  3.056391e-50
+              judge_score  0.045463  6.566010e-20
+           mean_coherence  0.037888  1.194059e-15
+             mean_RECEval  0.024285  4.609775e-06
+ourmetric_coherence_score  0.228353  0.000000e+00
+  ourmetric_quality_score  0.040456  5.459781e-15
+ ourmetric_evidence_score  0.234056  0.000000e+00
+           ourmetric_b1b2  0.265205  0.000000e+00
+           ourmetric_b2b3  0.237889  0.000000e+00
+           ourmetric_b3b1  0.276286  0.000000e+00
+    ourmetric_total_score  0.284028  0.000000e+00
+
+Processing File: /home/ojas/scripts/datasets/Final_Runs/filtered_Deepseek_Qwen_7B.json 
+
+                   Metric   SomersD        pValue
+                roscoe-sa  0.104774 4.632668e-103
+                roscoe-ss  0.128428 2.221447e-158
+                roscoe-li  0.014618  2.781240e-03
+                roscoe-lc -0.017318  4.634288e-04
+        total_roscoe_mean  0.062168  1.508099e-37
+              judge_score  0.033017  6.340110e-13
+           mean_coherence  0.031607  5.287957e-13
+             mean_RECEval  0.007195  1.413709e-01
+ourmetric_coherence_score  0.201405  0.000000e+00
+  ourmetric_quality_score  0.046699  3.550133e-22
+ ourmetric_evidence_score  0.213934  0.000000e+00
+           ourmetric_b1b2  0.230873  0.000000e+00
+           ourmetric_b2b3  0.217274  0.000000e+00
+           ourmetric_b3b1  0.257012  0.000000e+00
+    ourmetric_total_score  0.263445  0.000000e+00

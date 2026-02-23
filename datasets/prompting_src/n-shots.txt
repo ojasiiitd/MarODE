@@ -1,0 +1,302 @@
+Input
+Claim: "Says Spectrum will provide free internet to students during coronavirus school closures."
+Label: "SUPPORTED"
+Evidence Text: [
+      "As of March 15, 33 states had decided to close public schools in hopes of curbing the spread of COVID-19. Millions of students could stay out of school for the rest of the academic year, the Washington Post reports. And so amid the fearmongering and misinformation on Facebook, we found a bright spot: posts, such as this one, claiming that Spectrum would provide free internet to students without it.",
+      "\"If students don’t have access to internet they can call 1.844.488.8398 during the school shutdown for free internet from Spectrum,\" the March 13 post says.",
+      "It was flagged as part of Facebook’s efforts to combat false news and misinformation on its News Feed. (Read more about our partnership with Facebook.)",
+      "But this post happens to be true.",
+      "Charter Communications, a company that provides internet service under the brand Spectrum, on March 13 announced it would offer free internet for 60 days for households with students who don’t already have a Spectrum subscription. The number listed is one digit different than the number in the Facebook post — 1-844-488-8395 — but both connected to Spectrum when we tried calling on March 16.",
+      "\"In the coming weeks, many Americans will be affected either directly or indirectly by COVID-19 and Charter is focused on serving and supporting our 29 million customers,\" the company said in a press release.",
+      "Starting March 16, Charter also started waiving installation fees for new student households and opening its wifi hotspots for public use to, it said, \"ease the strain during this challenging time.\"",
+      "Comcast has announced similar measures, pledging free wifi hotspots around the country \"available to anyone who needs them\" and providing free internet for new customers for 60 days. If existing customers contact the company and let it know that they can’t pay their bills right now, the company won’t disconnect their internet service or charge late fees, the company said.",
+      "Both Comcast and Charter Communications seem to be heeding the call of Federal Communications Commission Chairman Aji Pai, who asked broadband and telephone service providers on March 12 to help keep Americans connected during the coronavirus outbreak, according to the FCC.",
+      "We rate this Facebook post True."
+    ]
+
+Output
+<Rstart>  
+R0: The claim states that Spectrum (under Charter Communications) will provide free internet to students during school closures caused by the coronavirus pandemic.  
+R1: The evidence mentions a Facebook post from March 13 claiming that students without internet access can call Spectrum to receive free internet during school shutdowns.  
+R2: Although the Facebook post was reviewed for misinformation, it was confirmed as accurate — specifically noted as “true.”  
+R3: Charter Communications, operating under the Spectrum brand, officially announced on March 13 that it would offer 60 days of free internet to households with students who do not already have a Spectrum subscription.  
+R4: Additional measures taken by Charter included waiving installation fees and opening public wifi hotspots, reinforcing the intent to provide internet access during the pandemic.  
+R5: These actions directly align with the claim that Spectrum would provide free internet to students during coronavirus-related school closures.  
+Final Verdict: SUPPORTED
+<Rend>
+
+---
+
+Input
+Claim: "Rhode Island is at the top of the country for alcohol-related fatalities."
+Label: "PARTLY SUPPORTED"
+Evidence Text: [
+      "Law enforcement was one of the natural topics for Operation Clean Government's televised debate among the three Democratic candidates for attorney general.\n\n\tAt one point, one of the three, Stephen Archambault, talked about his four-point plan \"to correct the problems dealing with drunk driving,\" which calls for stiffer penalties for drivers with higher blood-alcohol levels or who are second offenders. The plan also proposes longer license suspensions, including a new type of suspension that would still allow offenders to drive to work.\n\n\tThen Archambault recalled seeing statistics suggesting that 4 out of 10 fatal accidents in Rhode Island involved alcohol. \"We shouldn't be at the top of the country for alcohol-related fatalities,\" he said.\n\n\tBut is Rhode Island really the worst in the country for DWI fatalities? \n\n\tWe asked the Archambault campaign for the source of its numbers. They referred us to a 2009 report from the National Highway Traffic Safety Administration's National Center for Statistics and Analysis.\n\n\tIt turns out that Rhode Island is not number one, but we're up there.\n\n\tFor 2008, the latest year for which statistics are available, the state ranked 5th out of the 50 states when it came to motor vehicle fatalities in which a driver was at the legal limit of .08 or higher.\n\n\tThirty-eight percent of our 69 driving fatalities that year involved someone who was drunk. That's very close to the 4 out of 10 cited by Archambault. Only Hawaii (39 percent), Montana (40 percent), Wyoming (42 percent) and North Dakota (46 percent) had a worse record.\n\n\tApparently our ranking can bounce around. In 2007, Rhode Island was right at the national average of 32 percent, but that doesn't happen often. In 2005 we ranked 11th, and in 2006 we were 10th.\n\n\tBut in 2003 and 2004, we were ranked first in the nation in the percentage of fatalities related to alcohol.\n\n\tArchambault isn't completely correct about our ranking, unless you go back several years. Yet it's clear he did give an accurate assessment of the scope of the problem.\n\n\tWe'll give him a Mostly True."
+    ]
+
+Output
+<Rstart>  
+R0: The claim asserts that Rhode Island is at the top of the country for alcohol-related fatalities.  
+R1: The evidence shows that in 2008, Rhode Island ranked 5th out of 50 states for motor vehicle fatalities involving legally drunk drivers (BAC ≥ 0.08), with 38% of fatalities being alcohol-related.  
+R2: While this percentage is close to the claim that 4 out of 10 fatalities involve alcohol, Rhode Island was not at the top in 2008—four other states had higher percentages.  
+R3: However, historical data shows that Rhode Island did rank 1st in the nation in alcohol-related fatality percentages in both 2003 and 2004.  
+R4: These fluctuations indicate that while Rhode Island has consistently been among the worst states for alcohol-related driving deaths, it is not currently “at the top.”  
+R5: Thus, the claim is only partially accurate—it reflects the seriousness of the issue but overstates Rhode Island’s current ranking.  
+Final Verdict: PARTLY SUPPORTED  
+<Rend>
+
+---
+
+Input
+Claim: "Florida's legal challenge of the federal health care bill is \"bipartisan.\""
+Label: "PARTLY REFUTED"
+Evidence Text: [
+      "Florida Republican Attorney General Bill McCollum says politics isn't the reason for his legal challenge to the landmark health care bill signed into law by President Barack Obama.To help make the point, McCollum says the 22-page suit filed in a Pensacola federal court on March 23, 2010, is \"bipartisan.\" \"This bipartisan effort by attorneys general around the country should put the federal government on notice that we will not tolerate the constitutional rights of our citizens and the sovereignty of our states to be trampled on,\" McCollum said in a press release announcing the lawsuit. \"This law represents an unprecedented encroachment on the liberty of the American people, and I will pursue this litigation to the highest court if necessary.\"The lawsuit argues that the federal government cannot impose taxes or financial penalties on someone who fails to have health insurance.Given how polarized the health care debate has become, we wondered how \"bipartisan\" the suit truly was. Thirteen attorneys general have signed on. They are:",
+      "Of that list, Caldwell of Louisiana is the lone Democrat. The rest are Republicans. There is no hard and fast definition of bipartisan, but it's quite a stretch to say one out of 13 is bipartisan. As a point of reference, consider two Congressional actions that are almost universally described as bipartisan -- the No Child Left Behind Act of 2001 and the 1996 welfare overhaul.",
+      "Ninety-eight Democrats and 230 Republicans voted for the welfare reform package in the U.S. House. Another 25 Democrats joined 53 Republicans voting for the bill in the U.S. Senate. No Child Left Behind passed 381-41 in the House with 183 Republicans and 198 Democrats voting for it. It passed 87-10 in the Senate with the support of 44 Republicans and 43 Democrats.",
+      "McCollum, who is running for governor, claims that his constitutional challenge of the landmark health care bill passed by Congress is a \"bipartisan effort.\" That's pretty misleading when only one out of 13 attorneys general supporting the lawsuit is something other than a Republican. As such, we rate his claim Barely True."
+    ]
+
+Output
+<Rstart>  
+R0: The claim is that Florida's legal challenge to the federal health care bill is "bipartisan," implying meaningful support from both major political parties.  
+R1: Attorney General Bill McCollum described the lawsuit as a “bipartisan effort” in a press release, likely referencing the political affiliations of the attorneys general who joined the lawsuit.  
+R2: The evidence shows that of the 13 attorneys general who signed the suit, 12 were Republicans and only 1—Caldwell of Louisiana—was a Democrat.  
+R3: The use of the term "bipartisan" is contrasted with other historical legislative examples (e.g., No Child Left Behind, welfare reform), where substantial support came from both parties. These examples highlight that true bipartisanship typically involves broader cross-party representation.  
+R4: Therefore, while the presence of one Democrat technically meets the loosest definition of bipartisanship, the overwhelming Republican composition makes the characterization misleading.  
+R5: The claim is not entirely false, since a Democrat did join, but it exaggerates the extent of bipartisan support, justifying a partially refuted verdict.  
+Final Verdict: PARTLY REFUTED  
+<Rend>
+
+---
+
+Input
+Claim: "Malia Obama suspended after racist anti-white attack goes viral."
+Label: "REFUTED"
+Evidence Text: [
+      "A story on Facebook would have you believe that Malia Obama got in trouble at Harvard for writing a paper imagining \"a world without white people.\"",
+      "But this is made up.",
+      "\"Malia Obama suspended after racist anti-white attack goes viral,\" states an April 9 headline on Only Politics, a website with headlines supportive of President Donald Trump.",
+      "Facebook users flagged the post as being potentially fabricated, as part of the social network’s efforts to combat online hoaxes.",
+      "The story appeared to be copied from a website by Christopher Blair, a frequent purveyor of fake news. His Facebook page warns: \"Nothing on this page is real. It is a collection of the satirical whimsies of liberal trolls masquerading as conservatives. You have been warned.\"",
+      "The article said that Malia Obama was suspended after writing a paper imagining a \"world without white people.\"",
+      "The story said that Obama wrote: \"White people are so 1960’s. Sometimes the only thing that keeps me going is the fact that they will be blended out by the time I am 30.\"",
+      "Predictions by the U.S. Census show that the white race will increase from 248 million in 2016 to 263 million in 2030.",
+      "The story quoted a person said to be Harvard Dean Cain Markholder: \"This sort of attack against any race is uncalled for. Ms. Obama has been informed she is suspended pending an investigation into her statement.\"",
+      "Harvard has multiple deans, but none is named Cain Markholder.",
+      "Harvard media relations did not respond to our query. We found no news reports that Malia Obama had been suspended from Harvard.",
+      "Malia and Sasha Obama, the daughters of former President Barack Obama, have been the subject of multiple fake news stories, including that Malia was \"among 10 arrested in racist Antifa attack\" and that she was expelled from Harvard, and that Sasha drove an expensive car into a lake.",
+      "It is a hoax that Malia Obama was suspended from Harvard for writing a paper imagining a world without white people. We rate this claim Pants on Fire."
+    ]
+
+Output
+<Rstart>  
+R0: The claim states that Malia Obama was suspended from Harvard after a racist, anti-white paper she wrote went viral.  
+R1: The evidence identifies the origin of this claim as a Facebook post and article on a website known for fabricating news, including a disclaimer that “nothing on this page is real.”  
+R2: The story attributes a quote to a supposed Harvard dean named “Cain Markholder,” but no such person exists among Harvard’s leadership.  
+R3: There are no credible news reports or official statements confirming that Malia Obama was suspended from Harvard, and Harvard’s media relations team did not validate the story.  
+R4: The story contains fabricated quotes and statistics, and is part of a known pattern of hoaxes targeting the Obama family.  
+R5: Given that the entire narrative is invented and no factual basis supports the suspension or the alleged paper, the claim is wholly false.  
+Final Verdict: REFUTED  
+<Rend>
+
+---
+
+Input
+Claim: "The Chris Hani Baragwanath in South Africa is the worlds third-biggest hospital."
+Label: "PARTLY SUPPORTED"
+Evidence Text: [
+      "The Chris Hani Baragwanath Hospital has been in the black township of Soweto in Johannesburg since World War II when it opened to care for British soldiers. Today, it is a sprawling compound of over 400 buildings housing about 3,200 beds.",
+      "Those numbers clearly mean a lot to management because on the hospital’s website, right under its name, is the statement \"The world’s third-biggest hospital, in South Africa.\"",
+      "That’s not quite right, according to our colleagues at Africa Check.",
+      "Chris Hani Baragwanath Hospital says it trails only West China Hospital, affiliated with Sichuan University in the city of Chengdu, with about 4,300 beds, and Chang Gung Memorial Hospital, which lists about 9,000 beds.",
+      "But Africa Check found an additional hospital that edges out the Soweto health center. The Clinical Centre of Serbia in Belgrade has 3,470 beds available.",
+      "So Chris Hani Baragwanath Hospital ranks at least fourth, not third. It’s actually not even a close fourth because repairs and renovations have trimmed the number of beds open right now. A hospital spokesman told Africa Check that a more accurate current total is 2,888.",
+      "For the curious, New York Presbyterian has 2,328 beds, Florida Hospital Orlando has 2,247 beds and the Hospital das Clinicas with the University of Sao Paulo Medical School has 2,200 beds.",
+      "Our ruling",
+      "Administrators of the Chris Hani Baragwanath Hospital in Soweto, Johannesburg, said theirs is the third-largest in the world. Today, the hospital has 2,888 useable beds. A hospital in Belgrade, Serbia, has 3,470.",
+      "The Chris Hani Baragwanath Hospital is large, but not as large as it believes. We rate this statement Half True."
+    ]
+
+Output
+<Rstart> 
+R0: The claim asserts that the Chris Hani Baragwanath Hospital in South Africa is the world’s third-biggest hospital.  
+R1: The hospital itself promotes this statement on its website, claiming it is third after West China Hospital and Chang Gung Memorial Hospital.  
+R2: However, Africa Check identified the Clinical Centre of Serbia, which has 3,470 beds, as being larger than Chris Hani Baragwanath Hospital.  
+R3: The current number of usable beds at Chris Hani Baragwanath is reported to be around 2,888 due to ongoing renovations, making it at least fourth in size, not third.  
+R4: Therefore, while the hospital is indeed one of the largest in the world, it is not currently the third-largest based on bed count.  
+R5: The claim is partially accurate in conveying the hospital's global scale, but it overstates its ranking.  
+Final Verdict: PARTLY SUPPORTED  
+<Rend>
+
+
+---
+
+Input
+Claim: "Photo shows an ice mass hanging inside a Houston home during Texas winter storms."
+Label: "REFUTED"
+Evidence Text: [
+      "Winter Storm Uri recently unleashed record snow, ice and cold on large parts of the country. Widespread power outages, burst pipes and flooding, grocery shortages, boil water advisories and at least 31 deaths were left in its wake.",
+      "Among the states hit hardest was Texas. Beginning Feb. 15, millions of people were left without power and heat amid single-digit temperatures.",
+      "A photo widely circulated on Facebook showed a large mass of ice, apparently from burst pipes, hanging inside of a kitchen. One poster who shared the image on Feb. 17 wrote: \"Someone’s house in Houston Texas.\" That post was shared 12,000 times.",
+      "The post was flagged as part of Facebook’s efforts to combat false news and misinformation on its News Feed. (Read more about our partnership with Facebook.)",
+      "The first comment on the post says the photo is from years ago. But others commenting simply expressed horror at the image.",
+      "The photo does not depict damage from the February storm.",
+      "A TinEye reverse image search shows the photo was shared online as early as 2018. The earliest post we could find is a Reddit thread that started Jan. 8, 2018. It suggests that the image shows a burst water pipe in Watertown, N.Y., which at least one local media outlet covered.",
+      "We rate the post False."
+    ]
+
+Output
+<Rstart>  
+R0: The claim is that a viral photo shows an ice mass hanging inside a Houston home during the Texas winter storms of February 2021.  
+R1: The image was widely circulated on Facebook during Winter Storm Uri, with captions suggesting it depicted storm damage in Houston, Texas.  
+R2: However, a reverse image search reveals that the photo was shared online as early as January 2018, predating the 2021 storm.  
+R3: The earliest known source points to a Reddit post describing a burst pipe in Watertown, New York—not Houston.  
+R4: There is no evidence linking the image to the 2021 Texas storm, and its reuse during that event is misleading.  
+R5: Therefore, the photo does not authentically depict the claimed event and the association with the Houston winter storm is false.  
+Final Verdict: REFUTED  
+<Rend>
+
+---------------
+
+TASKS
+
+Claim: "ISIS reaches about 100 million people a day through social media."
+Label: "PARTLY SUPPORTED"
+Evidence Text: [
+      "We’ve analyzed ISIS’s infamous ability to reach people on social media before, and found the claim that ISIS posts 90,000 social media messages each day to be Mostly True.",
+      "Retired U.S. Army Gen. Stanley McChrystal upped the ante recently on Hugh Hewitt’s radio show.",
+      "McChrystal, former commander of the U.S. and International Security Assistance Forces in Afghanistan appeared on Hewitt’s show to discuss his new book, Team of Teams: New Rules of Engagement for a Complex World.",
+      "At one point, McChrystal talked about the successes of ISIS's strategy.",
+      "\"ISIS, I think, is a 21st Century manifestation of information technology. Think about their agility on the battlefield … but think about how many people they influence every day with their information operations. They reach about 100 million people a day through various things. They only have (to) recruit a tiny percentage of those to have a real impact.\"",
+      "100 million people? That’s more than the population of Germany. On a daily basis.",
+      "PunditFact attempted to reach McChrystal through his book publisher, his consultancy and through Twitter but did not hear back.",
+      "However, according to experts, 100 million seems to be giving ISIS a little too much credit.",
+      "Earlier this year, PunditFact reached out to J.M Berger, a non-resident fellow at the Brookings Institution, to comment on ISIS’s Twitter posts. During that interview, Berger referenced a study he and his colleague, Jonathon Morgan, had been working on. Since then, the full study has been published.",
+      "In the ISIS Twitter Census, Berger and Morgan uncovered an estimated 46,000 Twitter accounts tied to ISIS supporters. These accounts were found in a time period from September to December 2014.",
+      "The study also includes that each account had an average of 1,004 followers.",
+      "In PunditFact’s previous article, Berger placed the estimated total number of tweets per day at about 200,000 (including retweets).",
+      "In theory, if ISIS-backed accounts sent up to 200,000 tweets a day, and each went to 1,000 people, that would be more than 200 million people reached.",
+      "But that’s not how it works.",
+      "For starters, many of the followers overlap. Second, just because someone posts a tweet doesn’t mean it reaches every follower.",
+      "Lastly, Twitter has been trying to identify and suspend ISIS-supported accounts. The New York Times reported in April that Twitter had suspended 10,000 ISIS accounts \"for tweeting violent threats.\"",
+      "\"A whole lot of those followers overlap, so you can't draw a really reliable conclusion,\" Berger said. \"Also that data is from October, and tens of thousands of accounts have been suspended since then. The numbers are wildly different now.\"",
+      "VOICES from the Blogs, a spin-off of the University of Milan, also confirms this. In its study, Luigi Curini, associate professor of political science, Stefano M. Iacus, professor of probability and mathematical statistics and Andrea Ceron, assistant professor of political science, have tracked \"the aggregate level (of) sentiment toward ISIS by monitoring (Twitter) posts written in Arabic language.\"",
+      "\"Assuming that the followers of each ISIS Twitter account are completely unrelated to each other ... is quite unrealistic,\" said Curini.",
+      "Curini also pointed to the importance of considering the content of the tweets issued by these accounts. \"Some of those tweets are jokes, personal conversations, or contain content that does not express any opinion. That is, not all the 100,000 to 200,000 tweets per day on average are tweets of ‘ISIS propaganda.’ \"",
+      "Berger also acknowledges that not all tweets influence people.",
+      "He describes a metric called \"impressions,\" which are a count of \"how many people have a message cross their timeline or how many times a message is otherwise seen or glimpsed.",
+      "\"It is feasible that ISIS could rack up to 100 million impressions a day, but it's not certain. … Scoring an impression is not the same thing as reaching or influencing an audience member,\" Berger said, \"but impressions are how people discover content, so they do count for something. But not necessarily a one-to-one impact; impressions can include the same person returning to content repeatedly.\"",
+      "So not only do followers’ accounts overlap, but the content of messages might not even leave an impact the user who sees it. McChrystal, in his quotation, seemed to be talking about the actual influence ISIS exerts via social media.",
+      "But what about other social media accounts?",
+      "\"ISIS has a presence on virtually every social media network that is worth having a presence on, including but not limited to Twitter, Facebook, Instagram, YouTube, Tumblr, VKontakte and Google Plus, in significant numbers. They even pop up with the occasional odd account on LinkedIn,\" said Berger.",
+      "Unfortunately, there doesn’t appear to be data available yet to measure just how much of an impact ISIS has on these other sites.",
+      "\"Getting data on the presence of ISIS supporters on other social networks is for a number of reasons more complex,\" said Curini. \"According to our monitoring (of Arabic public profiles), Twitter weights between 80 percent to 90 percent of the total presence of ISIS discussion on the net. And we also know that on the other channels on the net, the average support for ISIS is considerably less than on Twitter.\"",
+      "Our ruling",
+      "McChrystal said ISIS reaches \"about 100 million people a day through various things.\"",
+      "ISIS certainly has taken its war to social media, and experts agree that their strategy has some bite. But saying ISIS social media posts reach 100 million people a day is, at best, a high-end guesstimate, researchers say. And there are lots of caveats to consider.",
+      "Thousands of ISIS social media accounts have been shut down in recent months. Followers of ISIS accounts often overlap. And not all the messages sent actually reach every follower, or leave a lasting impression.",
+      "McChrystal’s statement is partially accurate but leaves out important details or takes things out of context. We rate it Half True."
+    ]
+
+Claim: "If we got solar energy from an area of the Southwestern desert 100 miles on a side, that would be enough, in and of itself, to provide 100 percent of all the electricity needs for the United States of America in a full year."
+Label: "SUPPORTED"
+Evidence Text: [
+      "Al Gore startled a Senate committee with an optimistic scheme for harnessing the sun's energy.",
+      "The former vice president sketched out the idea at a Senate Foreign Relations Committee hearing on climate change where he was the star witness.",
+      "\"A technology called 'concentrating solar thermal' is now becoming very competitive,\" Gore said at the Jan. 28, 2009, hearing. \"\n \n  Scientific American\n \n pointed out that if we took an area of the Southwestern desert 100 miles on a side, that would be enough, in and of itself, to provide 100 percent of all the electricity needs for the United States of America in a full year.\"",
+      "In January 2008,\n \n  Scientific American\n \n published an influential article titled\n \n  \"A Solar Grand Plan.\"",
+      "A conservative writer immediately attacked Gore's claim. The\n \n  Scientific American\n \n article \"did not say we needed an area 100 miles on each side, which is 10,000 square miles,\" William Tucker of the\n \n  American Spectator\n \n\n  wrote\n \n a day after Gore's testimony. \"The article stated, 'To meet the 2050 projection [of electrical demand], 46,000 square miles of land would be needed...\"",
+      "Gore's spokeswoman, Kallee Kreider, said Gore had cited the wrong source — he intended to cite\n \n  this report\n \n from Environment America, an advocacy group that promotes clean energy.",
+      "That report in turn cites the U.S. Energy Department, which does indeed say on\n \n  this Web page\n \n , \"The solar energy resource in a 100-mile-square area of Nevada [otherwise known as 100-miles-squared, or 10,000 square miles] could supply the United States with all its electricity using modestly efficient (10%) commercial photovoltaic modules.\"",
+      "That's a compelling source, but the apparent contradiction cited by Tucker made us wonder. So we called two of the authors of the\n \n  Scientific American\n \n piece, James Mason and Ken Zweibel. They said that Gore was probably correct, and in fact their article — far from contradicting his claim — contains data that support it.",
+      "Mason and Zweibel said that when they wrote that 46,000 square miles would be needed to meet the electricity demand in 2050, they were assuming electricity would provide a much greater portion of the country's energy than it does now — including, for example, 344 million plug-in hybrid vehicles.",
+      "A 10,000-square-mile solar plant could well provide\n \n  today's\n \n electricity needs, they said.",
+      "Here's how (dense math ahead; proceed with caution):",
+      "As graphics accompanying the print version of the \n \n  Scientific American\n \n piece indicate, the sun in parts of the Southwestern United States provides an average of about 6.5 kilowatt hours per square meter per day of solar radiation.",
+      "Take that 6.5 kilowatt hours per square meter per day and multiply that by the 365 days in a year and you get 2,372 kilowatt hours per square meter per year. We'll round it to 2,400.",
+      "Solar-electric systems could — optimistically — convert about 15 percent of that to electricity. That comes to 360 kilowatt hours per square meter per year.",
+      "You can't cram solar panels close together, because they would cast shadows on each other. For every square meter of solar panel in the southwestern U.S., you need 2.5 square meters of space. Once you account for that (by dividing 360 by 2.5), you find each square meter of a solar installation could produce 144 kilowatt hours per year.",
+      "There are 25.9 billion square meters in 10,000 square miles. Multiply that 25.9 billion by the 144 kilowatt hours that a square meter can produce in a year, and you get 3,729 billion kilowatt hours per year.",
+      "The U.S. consumes about 3,900 billion kilowatt hours of electricity per year, according to the\n \n  federal Energy Information Administration\n \n .",
+      "So Gore's estimate was close enough considering the many uncertainties involved.",
+      "\"I don't think you've found a serious blunder,\" said Zweibel, director of the Institute for Analysis of Solar Energy at George Washington University.",
+      "\"Anywhere from 100 to 150 miles per side will easily produce all the electricity in the United States with any solar technology,\" said Mason, director of the American Solar Action Plan and the Renewable Energy Research Institute in Farmingdale, N.Y.",
+      "That said, there are all sorts of reasons why building a 10,000-square-mile solar installation would be even more difficult than it sounds.",
+      "For one, we would need a place to store the electricity so that it could be doled out in the dark night hours and on cloudy days. Mason and Zweibel suggest using the solar energy to compress air underground in caverns, old mines, aquifers and depleted natural gas wells. Then it could be released on demand to turn turbines that would generate electricity.",
+      "Also, we would need a vast new system of transmission lines. To pay for that and other necessary improvements, Mason and Zweibel call for $420 billion of government subsidies.",
+      "Even given all the challenges, they, like Gore, argue large-scale solar development makes sense when you consider the enormous amounts of land, energy and money we currently use to mine fossil fuels, produce electricity from them and control their pollution.",
+      "Gore didn't exactly tell the whole story, since the 10,000-square-mile solar farm would not do the job \"in and of itself\" without other infrastructure improvements. But he was testifying on the broad issue of climate change, not delivering a lecture on building a solar plant. And his misattributing the claim to\n \n  Scientific American\n \n is not a significant inaccuracy, since that article did contain statistics that support the claim.",
+      "We find Gore's claim True."
+    ]
+
+
+Claim: "Even Richard Nixon released his tax returns to the public when he was running for president ..."
+Label: "PARTLY REFUTED"
+Evidence Text: [
+      "Tim Kaine has been goading Republican presidential nominee Donald Trump to release his tax returns to the public, just as the Democratic ticket did recently.",
+      "Kaine, a U.S. senator from Virginia and the Democratic vice presidential nominee, said Trump’s refusal to release his forms is a break from past GOP nominees, including one who Kaine said was not known for his ethics.",
+      "\"Even Richard Nixon released his tax returns to the public when he was running for president because he said, as has every major party nominee of both parties since, the American public have a right to see my tax returns,\" Kaine told a crowd during a Manchester, N.H., rally on Aug. 13.",
+      "We weren’t aware that Nixon released his tax returns while he was on the campaign trail. So we asked the Hillary Clinton campaign where Kaine got the information for that statement.",
+      "Sarah Peck, the Virginia director of communications for the Clinton campaign, pointed us to news articles and other sources about Nixon’s tax disclosures.",
+      "We also looked at the website for the Presidential Tax History Project, which is run by Tax Analysts, a Falls Church-based nonprofit that specializes in tax issues. That group has compiled tax returns online for past presidents and major-party presidential nominees.",
+      "On the group’s website, you’ll find copies of Nixon’s tax returns from 1969 through 1972.",
+      "But there’s a catch. Those returns were not released while Nixon was running for president. They were released in December 1973, a year after he was re-elected.",
+      "At the time, the 37th president was embroiled in the Watergate scandal, and questions were being raised about whether something also was amiss with his tax filings.",
+      "Reports had surfaced that Nixon had been paying a small amount of federal tax for several years, a function of having secured a large deduction for donating his vice presidential papers to the National Archives, said Joseph J. Thorndike, a historian at Tax Analysts.",
+      "To quell lingering concerns, Nixon released tax returns to the public as well as to the Joint Committee on Taxation despite the fact that the president was under an IRS audit at the time, Thorndike told us.",
+      "So Nixon did indeed release his full tax returns as president. Did he ever do that while he was running for that office? Nixon ran for president three times, so let’s go back a bit further in history.",
+      "Peck pointed us to a 1984 story in The New York Times, which noted that in his successful 1968 campaign for the presidency, Nixon released a brief summary of his financial affairs.",
+      "In the 1968 nominating contest, Nixon faced a field of GOP candidates that included Michigan Gov. George Romney.",
+      "Romney, whose son Mitt was the GOP presidential nominee in 2012, released a dozen years of his tax returns to Look magazine, according to a Bloomberg column written by Stephen Mihm, an associate professor of history at the University of Georgia.",
+      "\"Look (magazine) then went to Nixon, who proved distinctly less forthcoming. He permitted a writer to inspect photocopies of his returns, but only three years’ worth,\" Mihm wrote.",
+      "The history professor added that the issue didn’t come up during the general election campaign, because Democratic nominee Hubert Humphrey also refused to release his tax returns.",
+      "Mihm told us that Look magazine merely summarized selected information from Nixon’s returns, rather than publishing the documents themselves.",
+      "\"I suppose one could argue that Nixon gave a journalist access to his returns, but that’s not the same thing as releasing them,\" Mihm wrote in an email.",
+      "Thorndike also told us that Nixon’s limited disclosure in that instance wouldn’t really count as the candidate releasing his tax returns to the public. A reporter was able to look at them but wasn’t allowed to keep a copy of them, Thorndike noted.",
+      "\"In my book, that would not count as releasing your tax returns, because the whole crowd source thing is a big part of it,\" Thorndike said.",
+      "We couldn’t find any record of Nixon releasing tax returns during his two other runs for the presidency - in 1960, against John F. Kennedy, or in his 1972 re-election bid against George McGovern.",
+      "Thorndike said that, to his knowledge, Nixon didn’t release his returns during those campaigns. Mihm also told us he’s not aware of Nixon releasing his tax returns during any of his presidential campaigns.",
+      "Still, Thorndike said Nixon’s presidential tax return disclosure, while he was president in 1973, did start a tradition where presidents and candidates seeking the highest office release their returns to the public.",
+      "Nixon’s successor, Gerald Ford, did not release his tax returns publicly but instead provided a summary of his taxes. But Jimmy Carter did publicly release his tax returns while running against Ford in 1976. In fact, every major-party nominee since Carter has released them to the public, Thorndike said.",
+      "Our ruling",
+      "Kaine said, \"Even Richard Nixon released his tax returns to the public when he was running for president ...\"",
+      "Nixon never released his tax returns during a presidential campaign.",
+      "But there is a kernel of truth in Kaine’s statement. Nixon released his full returns when he already was president, to quell controversy over his taxes.",
+      "Also while running in 1968, he allowed a reporter to examine his returns, but beyond that limited circumstance, there’s no record that Nixon opened his tax forms to the general public.",
+      "While Kaine’s statement has an element of truth, it ignores facts that would create a different impression. We rate his statement Mostly False.",
+      "https://www.sharethefacts.co/share/e5913d6f-75bb-4d4e-bb5b-c112a9635685"
+    ]
+
+
+Claim: "Iran President Hassan \"Rouhani has more Cabinet members with Ph.D.s from American universities\" than members of Barack Obama’s Cabinet."
+Label: "SUPPORTED"
+Evidence Text: [
+      "Iranian President Hassan Rouhani is seen as a moderate more willing to engage the West, in part because of the backgrounds of his closest advisers.",
+      "Unlike brash, hard-lined predecessor Mahmoud Ahmadinejad, Rouhani nominated several cabinet members with advanced degrees from other countries -- a fact that surfaced during a discussion on the Iranian nuclear deal moderated by Bob Schieffer of CBS’ Face the Nation.",
+      "\"I was very interested that I read, I think it was in The Atlantic, that Rouhani has more cabinet members with Ph.D.s from American universities, he has more of those in his cabinet than President (Barack) Obama does,\" Schieffer said at the Dec. 9, 2013, forum at the Center for Strategic and International Studies in Washington.",
+      "Intrigued by the point, we wanted to know if it was true.",
+      "Just days earlier, The Atlantic published \"The Case for Giving Iran's Scholar-Diplomats a Chance\" by contributing editor Moisés Naím, a senior associate in international economics at the Carnegie Endowment for International Peace.",
+      "His column began with exactly the information we were looking for: Hassan Rouhani, Iran’s president, has more cabinet members with Ph.D. degrees from U.S. universities than Barack Obama does. In fact, Iran has more holders of American Ph.D.s in its presidential cabinet than France, Germany, Italy, Japan, Russia, or Spain — combined.",
+      "What’s the significance? The cabinet of scholars could launch a new chapter in Iran’s typically troubled relations with western countries and negotiations over its nuclear program -- or not, Naím wrote, since the country’s supreme leader, Ali Khamenei, ultimately calls the shots.",
+      "\"But compared to the kind of people that Ahmadinejad had in his cabinet, they were a very different kind of crowd,\" Naím told PunditFact by phone. \"So one would expect people with American Ph.D.s to be more sophisticated, more integrated in the world.\"",
+      "His piece singled out three Iranian cabinet officials from the 30-position body with American degrees. PunditFact verified each of the following officials graduated from these American universities:",
+      "Mohammad Agha Nahavandian, Rouhani’s chief of staff, was awarded a Ph.D. in economics on Jan. 30, 1994, from George Washington University.",
+      "Mohammad Javad Zarif, the country’s foreign affairs minister, completed his Ph.D. in international law and politics at the University of Denver in 1988. Zarif, who was the lead negotiator in the nuclear deal, was Iran’s ambassador to the United Nations based in New York.",
+      "Ali Akbar Salehi, a vice president and head of Iran’s Atomic Energy Organization, earned a Ph.D. in nuclear engineering from the Massachusetts Institute of Technology in 1977.",
+      "Several other members of Rouhani’s Cabinet graduated from universities in Europe, according to Naím’s piece. His minister of information and communications technology, Mahmoud Vaezi, enrolled at a doctoral program at Louisiana State University after studying at other American schools but ended up finishing his Ph.D. in international relations at Warsaw University in Poland. Even Rouhani earned a doctorate from Glasgow Caledonian University in Scotland, and several other members have advanced degrees from Iranian universities.",
+      "Rouhani’s cabinet has an important role in preparing policy and budgets, but it’s not all that powerful because decisions can be overruled by the supreme leader’s office and the Guardian Council, which is appointed by the supreme leader and considers legislation, said Alex Vatanka, an expert on Iran at the Middle East Institute. The U.S. Cabinet does not face similar wildcards, he said.",
+      "\"There is no sort of element of surprise in the middle of it with one of the priests coming from nearby churches saying, ‘No, no, this is ungodly and shouldn’t be done’,\" Vatanka said.",
+      "\"The cabinet has been a way for the president to cautiously advance a reform agenda in Iran,\" said Jon Alterman, director of the Middle East Program at the Center for Strategic and International Studies.",
+      "He pointed out that another Rouhani adviser who is not in the cabinet, Mahmood Sariolghalam, earned a Ph.D. from the University of Southern California.",
+      "How does Obama’s Cabinet compare?",
+      "There are a couple of ways of looking at Obama’s Cabinet, and neither measure produces more doctoral degrees from American universities than the three we confirmed in Iran. The U.S. cabinet is stacked with lawyers, which is pretty typical.",
+      "The advisory group includes Vice President Joe Biden and the leaders of 15 executive agencies. Of those, just one has an American Ph.D.",
+      "Ernest Moniz, Obama’s energy secretary, has no fewer than four honorary degrees. The one that counts for our purpose is his doctorate in theoretical physics from Stanford University.",
+      "If you expand the pool to include seven more Cabinet-rank officials listed on the same White House page, you find another doctorate. That’s Jason Furman, chairman of the Council of Economic Advisers, who earned a Ph.D. in economics from Harvard University (as well as master’s degrees in government from Harvard and in economics from the London School of Economics).",
+      "Our ruling",
+      "Bob Schieffer referenced an Atlantic piece when he said Rouhani’s cabinet has more members with Ph.D.s from American universities than Obama’s.",
+      "While we could not nail down the academic background of each member of Iran’s cabinet, we found enough members with verifiable degrees -- three -- to deem his statement accurate. Obama has two, including one official with Cabinet-rank.",
+      "What it all means for international relations remains to be seen.",
+      "We rate Schieffer’s statement True."
+    ]

@@ -1,2 +1,2 @@
 # Marode
-Marode Template
+Open sourcing the code for MarODE.

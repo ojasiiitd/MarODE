@@ -1,5 +1,5 @@
 # MarODE  
-![alt text](./MarODE_Method.png "MarODE Methodology")
+![alt text](MarODE_Method.png "MarODE Methodology")
 ## Markovian ODE-Guided Scoring for Offline Reasoning Trace Evaluation
 
 MarODE is a theory-driven, post-hoc evaluation framework for assessing the **quality of reasoning traces** produced by large language models (LLMs).

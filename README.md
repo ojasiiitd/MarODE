@@ -50,6 +50,41 @@ Each run produces batched JSON files of the form:
 }
 ```
 
+## MarODE Metric
+MarODE (Markov + ODE Reasoning Evaluator) is our proposed metric for evaluating reasoning traces.
+It decomposes reasoning quality into three principled components:
+- Coherence – Structural consistency of reasoning steps via random-walk transition dynamics over sentence embeddings.
+- Quality – Internal step quality, combining redundancy penalties and a differential ODE-based belief update mechanism.
+- Evidence Alignment – Semantic and NLI-based alignment between reasoning steps and supporting evidence.
+The final score is a weighted combination.
+
+**Running MarODE:**
+```python
+python src/evals/MarODE.py \
+  --input path/to/your_input.json \
+  --output path/to/output_with_marode.json \
+  --gpu 0
+```
+
+**Expected Input Format**:
+```json
+{
+  "claim": "...",
+  "label": "...",
+  "reasoning_trace": "...",
+  "evidence_text": ["...", "..."]
+}
+```
+**Output Format: **MarODE appends an ourmetric field to each entry:
+```json
+"ourmetric": {
+  "coherence_score": ...,
+  "quality_score": ...,
+  "evidence_score": ...,
+  "total_score": ...
+}
+```
+The `total_score` represents the final MarODE evaluation score in the range [0, 1].
 
 ## Evaluation
 We evaluate generated reasoning traces using multiple established baselines alongside our proposed metric. All evaluation scripts operate on JSON files containing reasoning traces and append metric-specific scores to each entry.
@@ -58,7 +93,7 @@ We evaluate generated reasoning traces using multiple established baselines alon
 Given a file of generated traces (e.g., outputs/deepseek_llama8b/traces_1.json), the following commands compute each evaluation metric:
 **Coherence (SGC, WGC, LC)**
 ```python
-python coherence_baseline.py \
+python src/evals/coherence_baseline.py \
   --input outputs/deepseek_llama8b/traces_1.json \
   --output outputs/deepseek_llama8b/traces_1_coherence.json \
   --model-path /home/models/deberta-xlarge-mnli \
@@ -66,7 +101,7 @@ python coherence_baseline.py \
 ```
 **LLM-as-a-Judge (Prometheus)**
 ```python
-python llm_judge_prometheus.py \
+python src/evals/llm_judge_prometheus.py \
   --input outputs/deepseek_llama8b/traces_1.json \
   --output outputs/deepseek_llama8b/traces_1_judged.json \
   --model-path /home/models/prometheus-eval--prometheus-7b-v2.0 \
@@ -75,7 +110,7 @@ python llm_judge_prometheus.py \
 ```
 **RECEval**
 ```python
-python receval_baseline.py \
+python src/evals/receval_baseline.py \
   --input outputs/deepseek_llama8b/traces_1.json \
   --output outputs/deepseek_llama8b/traces_1_receval.json \
   --model-path /home/models/deberta-xlarge-mnli \
@@ -84,7 +119,7 @@ python receval_baseline.py \
 ```
 **ROSCOE-LC**
 ```python
-python roscoe_lc_baseline.py \
+python src/evals/roscoe_lc_baseline.py \
   --input outputs/deepseek_llama8b/traces_1.json \
   --output outputs/deepseek_llama8b/traces_1_roscoe.json \
   --ppl-model /home/models/gpt2-large \
@@ -93,7 +128,7 @@ python roscoe_lc_baseline.py \
 ```
 **ROSCOE-LI**
 ```python
-python roscoe_li_baseline.py \
+python src/evals/roscoe_li_baseline.py \
   --input outputs/deepseek_llama8b/traces_1.json \
   --output outputs/deepseek_llama8b/traces_1_roscoe_li.json \
   --model-path /home/models/deberta-xlarge-mnli \
@@ -102,7 +137,7 @@ python roscoe_li_baseline.py \
 ```
 **ROSCOE-SS**
 ```python
-python roscoe_sa_baseline.py \
+python src/evals/roscoe_sa_baseline.py \
   --input outputs/deepseek_llama8b/traces_1.json \
   --output outputs/deepseek_llama8b/traces_1_roscoe_sa.json \
   --model-path /home/models/deberta-xlarge-mnli \
@@ -111,7 +146,7 @@ python roscoe_sa_baseline.py \
 ```
 **ROSCOE-SA**
 ```python
-python roscoe_ss_baseline.py \
+python src/evals/roscoe_ss_baseline.py \
   --input outputs/deepseek_llama8b/traces_1.json \
   --output outputs/deepseek_llama8b/traces_1_roscoe_ss.json \
   --model-path /home/models/sentence-transformers--all-MiniLM-L6-v2 \
@@ -120,7 +155,7 @@ python roscoe_ss_baseline.py \
 ```
 To compute correlations **(Somers’ D)** between perturbation scores and evaluation metrics across filtered result files:
 ```python
-python correlation_analysis.py \
+python src/evals/correlation_analysis.py \
   --dir outputs/final_runs \
   --pattern "filtered_*.json" \
   --save correlation_results.csv

@@ -1,6 +1,6 @@
 .DS_Store
 README copy.md
-datasets
-evaluation_src
-prompts
-results
+datasets/
+evaluation_src/
+prompts/
+results/

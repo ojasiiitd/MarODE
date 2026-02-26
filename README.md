@@ -44,7 +44,7 @@ python -m src/reasoning/run_generation.py \
 Each run produces batched JSON files of the form:
 ```json
 {
-  "shots": 6,
+  "shots": 4,
   "claim_id": "...",
   "reasoning_trace": "R0: ...\nR1: ...\n...\nFinal Verdict: ..."
 }

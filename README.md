@@ -1,166 +1,135 @@
-# MarODE  
+# Markovian ODE-Guided Scoring for Offline Reasoning Trace Evaluation
 ![alt text](MarODE_Method.png "MarODE Methodology")
-## Markovian ODE-Guided Scoring for Offline Reasoning Trace Evaluation
 
-MarODE is a theory-driven, post-hoc evaluation framework for assessing the **quality of reasoning traces** produced by large language models (LLMs).
+## Dataset Preparation
+We provide preprocessing scripts to construct enriched versions of the PolitiFact and LIAR datasets by scraping full article evidence from fact-check pages.
+```python
+python scripts/prepare_liar_with_politifact_evidence.py \
+    --input data/LIAR_train.tsv \
+    --output data/LIAR_extracted.json
+```
+```python
+python src/dataset/prepare_politifact_with_evidence.py \
+    --input data/politifact_factcheck_data.json \
+    --output data/politifact_extracted.json
 
-Unlike traditional metrics that focus on final answer correctness or surface similarity, MarODE evaluates the *structure, progression, and evidential grounding* of multi-step reasoning.
+```
+Both scripts generate a JSON file with the following structure:
+```json
+{
+  "claim": "...",
+  "label": "...",
+  "evidence_text": ["paragraph 1", "paragraph 2", ...]
+}
+```
 
-## Motivation
+## Generating Reasoning Traces
+We generate reasoning traces using multiple open-source and instruction-tuned language models over the prepared claim datasets.
+The following models have been used by us:
+- DeepSeek-R1-Distill-Llama-8B
+- DeepSeek-R1-Distill-Qwen-7B
+- DeepSeek-R1-Distill-Qwen-14B
+- Qwen-2.5-3b-Evol-CoT
+- GPT-OSS-20B
 
-Reasoning traces (e.g., Chain-of-Thought) are increasingly used in:
-
-- Mathematical reasoning  
-- Multi-hop QA  
-- Fact verification  
-- Logical inference  
-- Strategic reasoning  
-
-However, evaluating reasoning quality remains challenging.
-
-Existing approaches:
-
-- Rely on surface similarity
-- Overfit to mechanical perturbations
-- Fail to generalize across reasoning styles
-- Do not align reliably with human judgments
-
-MarODE addresses this by modeling reasoning as:
-
-- A **Markovian semantic progression**
-- A **redundancy-aware structural process**
-- An **evidence-grounded inferential chain**
-
-
-## What Does MarODE Measure?
-
-MarODE evaluates:
-
-- The *direction* of reasoning  
-- The *structure* of progression  
-- The *consistency* of inferential flow  
-
-It is independent of the final answer alone.
+```python
+python -m src/reasoning/run_generation.py \
+  --model-path <PATH_TO_MODEL> \
+  --dataset data/claims_dataset_1200.json \
+  --prompt-dir prompts \
+  --output-dir outputs/<MODEL_NAME> \
+  --n-shot 6 \
+  --gpu-index 0
+```
+Each run produces batched JSON files of the form:
+```json
+{
+  "shots": 6,
+  "claim_id": "...",
+  "reasoning_trace": "R0: ...\nR1: ...\n...\nFinal Verdict: ..."
+}
+```
 
 
-## Core Components
+## Evaluation
+We evaluate generated reasoning traces using multiple established baselines alongside our proposed metric. All evaluation scripts operate on JSON files containing reasoning traces and append metric-specific scores to each entry.
 
-Given a reasoning trace:
-$$
-r = \{R_0, R_1, \dots, R_k, V_f\}
-$$
-MarODE integrates three complementary modules.
-
-## Markovian Coherence (α)
-
-Models local semantic progression between reasoning steps.
-
-- Steps are embedded into a normalized space.
-- A cosine-based transition matrix defines a Markov chain.
-- 256 random walks are simulated.
-- Walks are rewarded for monotonic transitions (i → i±1).
-- Oscillation and jumps are penalized.
-
-This is the strongest driver of performance in our ablations.
-
----
-
-## ODE-Guided Quality Modeling (β)
-
-Captures global reasoning dynamics through two mechanisms:
-
-### (a) Redundancy Control
-
-- Penalizes repeated lexical content across steps.
-- Encourages incremental informational contribution.
-
-### (b) Directional Consistency (Continuous Belief Modeling)
-
-Instead of multiplicative probability updates, we model belief evolution via:
-$$
-\frac{dp}{dt} = \rho \left(S_i - 0.5\right) p(1 - p)
-$$
-where:
-- $S_i$ is the NLI-based entailment–contradiction signal.
-- p(t) ∈ (0,1) is latent belief strength
-
-**Why ODE?**
-
-- Avoids brittle multiplicative collapse
-- Produces smooth trajectories
-- Reduces volatility under oscillating reasoning
-- Ensures stability across long chains
-
-## Evidence Alignment (γ)
-
-Grounds reasoning in external evidence.
-
-For each step:
-
-- Find most similar evidence sentence
-- Refine alignment using NLI:
-  - Reward entailment
-  - Penalize contradiction
-
-This mitigates hallucinated or unsupported reasoning.
-
-## Final Aggregation
-
-MarODE combines the three components:
-
-$$
-\text{MarODE}(r) = w_c \, C(r) + w_q \, Q(r) + w_e \, E(r)
-$$
-
-Default:
-
-$$
-w_c = w_q = w_e = \frac{1}{3}
-$$
-
-Ablation studies show:
-
-- Coherence ($\alpha$) is the dominant signal.
-- ODE quality ($\beta$) stabilizes evaluation.
-- Evidence ($\gamma$) plays a secondary, context-dependent role.
-
-## Empirical Findings
-
-Across:
-
-- 25,800 generated reasoning traces
-- 5 reasoning-optimized LLMs
-- 1, 2, and 4-shot prompting
-- Human-centric perturbations
-- 4 human-evaluated reasoning benchmarks
-
-MarODE demonstrates:
-
-### Goodness (Sensitivity to Degradation)
-
-- 235%–279% improvement in Somers’ D over ROSCOE
-- Stable across datasets and model families
-- Robust to perturbation variations
-
-### Soundness (Alignment with Human Judgments)
-
-- Strongest correlations on:
-  - EntailmentBank
-  - ProofWriter
-  - GSM8K
-  - StrategyQA
-- Statistically significant across domains
-
-### Stability
-
-- Smooth, symmetric score distributions
-- Reduced sensitivity to prompt shot variation
-- No collapse under oscillating reasoning
-
-## Authors
-
-- **Arghodeep Nandi**  
-- **Ojasva Saxena**  
-- **Tanmoy Chakraborty**  
-
-**Indian Institute of Technology Delhi**
+### Running Baseline Evaluations
+Given a file of generated traces (e.g., outputs/deepseek_llama8b/traces_1.json), the following commands compute each evaluation metric:
+**Coherence (SGC, WGC, LC)**
+```python
+python coherence_baseline.py \
+  --input outputs/deepseek_llama8b/traces_1.json \
+  --output outputs/deepseek_llama8b/traces_1_coherence.json \
+  --model-path /home/models/deberta-xlarge-mnli \
+  --gpu 0
+```
+**LLM-as-a-Judge (Prometheus)**
+```python
+python llm_judge_prometheus.py \
+  --input outputs/deepseek_llama8b/traces_1.json \
+  --output outputs/deepseek_llama8b/traces_1_judged.json \
+  --model-path /home/models/prometheus-eval--prometheus-7b-v2.0 \
+  --gpu 0 \
+  --evidence true
+```
+**RECEval**
+```python
+python receval_baseline.py \
+  --input outputs/deepseek_llama8b/traces_1.json \
+  --output outputs/deepseek_llama8b/traces_1_receval.json \
+  --model-path /home/models/deberta-xlarge-mnli \
+  --gpu 0 \
+  --batch-size 64
+```
+**ROSCOE-LC**
+```python
+python roscoe_lc_baseline.py \
+  --input outputs/deepseek_llama8b/traces_1.json \
+  --output outputs/deepseek_llama8b/traces_1_roscoe.json \
+  --ppl-model /home/models/gpt2-large \
+  --cola-model /home/models/tinybertcola \
+  --gpu 0
+```
+**ROSCOE-LI**
+```python
+python roscoe_li_baseline.py \
+  --input outputs/deepseek_llama8b/traces_1.json \
+  --output outputs/deepseek_llama8b/traces_1_roscoe_li.json \
+  --model-path /home/models/deberta-xlarge-mnli \
+  --gpu 0 \
+  --evidence true
+```
+**ROSCOE-SS**
+```python
+python roscoe_sa_baseline.py \
+  --input outputs/deepseek_llama8b/traces_1.json \
+  --output outputs/deepseek_llama8b/traces_1_roscoe_sa.json \
+  --model-path /home/models/deberta-xlarge-mnli \
+  --gpu 0 \
+  --evidence true
+```
+**ROSCOE-SA**
+```python
+python roscoe_ss_baseline.py \
+  --input outputs/deepseek_llama8b/traces_1.json \
+  --output outputs/deepseek_llama8b/traces_1_roscoe_ss.json \
+  --model-path /home/models/sentence-transformers--all-MiniLM-L6-v2 \
+  --gpu 0 \
+  --evidence true
+```
+To compute correlations **(Somers’ D)** between perturbation scores and evaluation metrics across filtered result files:
+```python
+python correlation_analysis.py \
+  --dir outputs/final_runs \
+  --pattern "filtered_*.json" \
+  --save correlation_results.csv
+```
+To evaluate whether increasing the number of in-context examples (1-shot, 2-shot, 4-shot) leads to statistically significant differences in evaluation metrics, we perform paired Wilcoxon signed-rank tests across aligned claim instances.
+```python
+python wilcoxon_shot_analysis.py \
+  --shot1 RT_Original_1shot.json \
+  --shot2 RT_Original_2shot.json \
+  --shot4 RT_Original_4shot.json \
+  --output Shot_Difference_Wilcoxon_Results.csv
+```

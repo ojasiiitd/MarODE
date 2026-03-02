@@ -1,6 +1,49 @@
 # Markovian ODE-Guided Scoring for Offline Reasoning Trace Evaluation
 ![alt text](MarODE_Method.png "MarODE Methodology")
 
+## Install via PyPI
+We have made our evaluation pipeline publicly available as a Python package on PyPI, and it can be freely installed using:
+```bash
+pip install marode
+```
+
+**Quick Code Implementation:**
+```python
+from marode.evaluator import MarODEEvaluator, EvaluatorConfig, get_device
+
+# Initialize evaluator
+config = EvaluatorConfig()
+device = get_device(0)
+evaluator = MarODEEvaluator(config, device)
+
+# Example reasoning trace
+reasoning_trace = """
+R0: The suspect was seen near the crime scene at 9 PM.
+R1: Surveillance footage confirms someone matching the suspect's description.
+R2: Surveillance footage confirms someone matching the suspect's description.
+R3: Surveillance footage confirms someone matching the suspect's description.
+R4: The suspect has no alibi for that time.
+R5: Fingerprints from the crime scene match the suspect.
+"""
+
+entry = {
+    "id": "example_1",
+    "reasoning_trace": reasoning_trace,
+    "evidence_text": [
+        "A person resembling the suspect was caught on CCTV at 9 PM.",
+        "Fingerprints collected at the scene match the suspect's fingerprints.",
+        "No other witnesses have confirmed the suspect's whereabouts."
+    ]
+}
+
+# Score reasoning trace
+scored_entry = evaluator.score_entry(entry)
+
+# Print MarODE scores
+for k, v in scored_entry["ourmetric"].items():
+    print(f"{k}: {v:.4f}")
+```
+
 ## Dataset Preparation
 We provide preprocessing scripts to construct enriched versions of the PolitiFact and LIAR datasets by scraping full article evidence from fact-check pages.
 ```python
@@ -167,47 +210,4 @@ python wilcoxon_shot_analysis.py \
   --shot2 RT_Original_2shot.json \
   --shot4 RT_Original_4shot.json \
   --output Shot_Difference_Wilcoxon_Results.csv
-```
-
-## Install via PyPI
-
-```bash
-pip install marode
-```
-
-**Quick Code Implementation:**
-```python
-from marode.evaluator import MarODEEvaluator, EvaluatorConfig, get_device
-
-# Initialize evaluator
-config = EvaluatorConfig()
-device = get_device(0)
-evaluator = MarODEEvaluator(config, device)
-
-# Example reasoning trace
-reasoning_trace = """
-R0: The suspect was seen near the crime scene at 9 PM.
-R1: Surveillance footage confirms someone matching the suspect's description.
-R2: Surveillance footage confirms someone matching the suspect's description.
-R3: Surveillance footage confirms someone matching the suspect's description.
-R4: The suspect has no alibi for that time.
-R5: Fingerprints from the crime scene match the suspect.
-"""
-
-entry = {
-    "id": "example_1",
-    "reasoning_trace": reasoning_trace,
-    "evidence_text": [
-        "A person resembling the suspect was caught on CCTV at 9 PM.",
-        "Fingerprints collected at the scene match the suspect's fingerprints.",
-        "No other witnesses have confirmed the suspect's whereabouts."
-    ]
-}
-
-# Score reasoning trace
-scored_entry = evaluator.score_entry(entry)
-
-# Print MarODE scores
-for k, v in scored_entry["ourmetric"].items():
-    print(f"{k}: {v:.4f}")
 ```

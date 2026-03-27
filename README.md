@@ -31,7 +31,7 @@ for k, v in scored_entry["ourmetric"].items():
 ```
 
 ## Dataset Preparation
-We provide preprocessing scripts to construct enriched versions of the PolitiFact and LIAR datasets by scraping full article evidence from fact-check pages.
+We provide preprocessing scripts to construct enriched versions of the PolitiFact and LIAR datasets by scraping full article evidence from fact-check pages. All required dependencies for running our experiments are specified in the `requirements.txt` file. 
 ```python
 python scripts/prepare_liar_with_politifact_evidence.py \
     --input data/LIAR_train.tsv \
@@ -189,6 +189,28 @@ python src/evals/correlation_analysis.py \
   --pattern "filtered_*.json" \
   --save correlation_results.csv
 ```
+
+Somers’ D correlations measuring the association between human-centric perturbation scores and evaluation metrics across different backbone models and prompting settings are given in the following table. For each column, the three highest correlations are highlighted in **bold**.
+
+| Metric | Qwen-3B-CoT | DeepSeek-Qwen-7B | Deepseek-Qwen-14B | Deepseek-LLaMA-8B | GPT-OSS-20B | LIAR (1-shot) | LIAR (2-shot) | LIAR (4-shot) | PolitiFact (1-shot) | PolitiFact (2-shot) | PolitiFact (4-shot) |
+|--------|-------------|------------------|-------------------|-------------------|-------------|---------------|---------------|---------------|----------------------|----------------------|----------------------|
+| ROSCOE-SA | 0.1187 | 0.1053 | 0.1111 | 0.1117 | 0.1048 | 0.1004 | 0.0983 | 0.1075 | 0.1145 | 0.1152 | **0.1281** |
+| ROSCOE-SS | 0.1294 | 0.1242 | 0.1301 | 0.1256 | 0.1284 | 0.1167 | 0.1146 | **0.1386** | 0.1264 | 0.1350 | 0.1331 |
+| ROSCOE-LI | 0.0318 | 0.0163 | 0.0496 | 0.0172 | 0.0146 | 0.0253 | 0.0279 | 0.0286 | 0.0283 | 0.0256 | 0.0200 |
+| ROSCOE-LC | -0.0189 | -0.0009 | -0.0223 | 0.0228 | -0.0173 | -0.0073 | -0.0076 | -0.0184 | 0.0002 | -0.0047 | -0.0066 |
+| **ROSCOE_MEAN** | 0.0819 | 0.0686 | 0.0958 | 0.0689 | 0.0622 | 0.0691 | 0.0728 | 0.0776 | 0.0793 | 0.0785 | 0.0742 |
+| LLM_as_a_Judge | 0.0436 | 0.0271 | 0.0421 | 0.0375 | 0.0330 | 0.0367 | 0.0282 | 0.0140 | 0.0516 | 0.0455 | 0.0407 |
+| Local_and_Global | 0.0458 | 0.0192 | 0.0516 | 0.0321 | 0.0316 | 0.0417 | 0.0397 | 0.0347 | 0.0296 | 0.0379 | 0.0330 |
+| ReCEval | 0.0457 | 0.0049 | 0.0311 | -0.0018 | 0.0072 | 0.0082 | 0.0084 | 0.0211 | 0.0253 | 0.0243 | 0.0177 |
+| **MarODE** | **0.2937** | **0.2371** | **0.2882** | **0.2921** | **0.2634** | **0.2618** | **0.2636** | **0.2604** | **0.2895** | **0.2840** | **0.2792** |
+| MarODE_COHERENCE (α) | **0.2857** | 0.1747 | **0.2798** | 0.2826 | 0.2014 | 0.2395 | 0.2357 | 0.2427 | 0.2165 | 0.2284 | 0.2296 |
+| MarODE_QUALITY (β) | 0.0286 | 0.0639 | 0.0331 | 0.0082 | 0.0467 | 0.0181 | 0.0342 | 0.0358 | 0.0374 | 0.0405 | 0.0410 |
+| MarODE_EVIDENCE (γ) | 0.2353 | 0.1955 | 0.2253 | 0.2367 | 0.2139 | 0.2075 | 0.2122 | 0.2082 | 0.2398 | 0.2341 | 0.2279 |
+| **MarODE (αβ)** | **0.3272** | **0.2093** | **0.3279** | **0.3118** | **0.2309** | **0.2762** | **0.2743** | **0.2769** | **0.2583** | **0.2652** | **0.2639** |
+| MarODE (βγ) | 0.2403 | 0.1992 | 0.2309 | 0.2392 | 0.2173 | 0.2103 | 0.2164 | 0.2129 | 0.2444 | 0.2379 | 0.2322 |
+| MarODE (αγ) | 0.2857 | **0.2303** | 0.2791 | **0.2857** | **0.2570** | **0.2550** | **0.2560** | **0.2527** | **0.2799** | **0.2763** | **0.2714** |
+
+
 To evaluate whether increasing the number of in-context examples (1-shot, 2-shot, 4-shot) leads to statistically significant differences in evaluation metrics, we perform paired Wilcoxon signed-rank tests across aligned claim instances.
 ```python
 python wilcoxon_shot_analysis.py \
